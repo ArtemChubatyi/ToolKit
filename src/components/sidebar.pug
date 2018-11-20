@@ -1,0 +1,31 @@
+nav.sidebar
+    .sidebar__logo
+        a.logo(href="javascript:void(0);")
+            img(src="img/dark-logo.png", alt="logo" class="img-responsive")
+    ul.sidebar-menu
+        li.have-children
+            a.sidebar-menu__item(href='javascript:void(0);')
+                span.sidebar-menu__item-inner
+                |  Buttons
+            ul
+                li
+                    a.sidebar-menu__item(href="#flat-buttons") Flat Buttons
+                li
+                    a.sidebar-menu__item(href="#raised-buttons") Rise Buttons
+        li
+            a.sidebar-menu__item(href='#box-shadows')
+                span.sidebar-menu__item-inner
+                |  Box-Shadows
+        li.have-children
+            a.sidebar-menu__item(href='javascript:void(0);')
+                span.sidebar-menu__item-inner
+                |  Cards
+            ul
+                li
+                    a.sidebar-menu__item(href="#simple-card") Simple Card
+                li
+                    a.sidebar-menu__item(href="#titled-card") Titiled Card
+                li
+                    a.sidebar-menu__item(href="#card-with-header") Card with Header
+
+        

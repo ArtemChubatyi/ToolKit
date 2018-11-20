@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        script(src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+        link(rel="stylesheet", href="css/main.min.css")
+    body
+        header.header#header(style="top: 0")
+          a.logo(href="javascript:void(0);")
+            img(src="img/white-logo.png", alt="logo" class="img-responsive")
+        .second-header
+        include components/sidebar
+        main.content#content
+          a(name="flat-buttons" class="anchor")
+          include examples/buttons/buttons
+          .divider
+          a(name="raised-buttons" class="anchor")
+          include examples/buttons/raised-buttons
+          .divider
+          a(name="box-shadows" class="anchor")
+          include examples/box-shadows/box-shadows
+          .divider
+          include examples/cards/cards
+          
+    script(src="js/scripts.min.js")

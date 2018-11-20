@@ -1,0 +1,62 @@
+$horizontal-padding: 21px;
+
+.tk-card {
+  @include common-styles();
+  @include box-shadow(1);
+
+  &__title {
+    display: block;
+    padding: 15px $horizontal-padding 0;
+    font-size: 24px;
+
+    @include ellipsis();
+
+    &_light {
+      color: $color-3;
+    }
+  }
+
+  &__header {
+    height: 180px;
+    position: relative;
+    display: flex;
+    padding-bottom: 12px;
+
+    .tk-card__title {
+      position: relative;
+      margin-top: auto;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 20px $horizontal-padding 6px;
+
+  }
+
+  &__divider {
+    background-color: $color-4;
+    border: none;
+    height: 1px;
+  }
+
+  &__footer {
+    display: flex;
+    padding: 6px $horizontal-padding;
+  }
+
+  &__button {
+    &_pulled {
+      margin-left: auto;
+    }
+  }
+}

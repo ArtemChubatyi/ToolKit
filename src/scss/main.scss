@@ -1,0 +1,242 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "prettifier";
+@import "../scss/_mixins/mixin";
+@import "../components/buttons";
+@import "../components/cards";
+
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.header {
+	background-color: $primary;
+	position: fixed;
+	width: 100%;
+	height: 72px;
+	z-index: 10;
+	box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	transition: linear .3s;
+}
+.sidebar {
+	width: 280px;
+	background-color: $background;
+	overflow-y: scroll;
+	height: 100vh;
+	position: fixed;
+	&::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: $background;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $secondary;
+	}
+	&::-webkit-scrollbar{
+		width: 6px;
+		background-color: $background;
+	}
+}
+.sidebar-menu {
+    margin: 0;
+    padding: 0;
+    max-width: 280px;
+    list-style: none;
+	list-style-type: none;
+	margin-top: 8px;
+	&__item {
+		background-color: $background;
+		padding: 20px 25px;
+		display: block;
+		text-decoration: none;
+		color: $primary;
+		transition: ease .3s;
+		position: relative;
+		
+		&:hover {
+			z-index: 9;
+			padding: 20px 25px;
+			background-color: $secondary;
+			// box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+	}
+	&__item-inner {
+		margin-right: 20px;
+  		color: $primary;	
+	}
+}
+
+.have-children ul {
+	padding: 0px;
+} 
+
+.have-children ul li a {
+	padding-left: 62px;
+}
+.have-children ul li a:hover {
+	padding-left: 94px;
+	
+} 
+.have-children, li {
+	position: relative;
+}
+.have-children span::after {
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+  line-height: 20px;
+  content: '›';
+  color: $primary;
+  transition: all .5s;
+}
+.active.have-children span::after {
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.sidebar-menu .have-children > ul {
+    display: none;
+}
+.content {
+	box-sizing: border-box;
+	background-color: $background;
+	height: auto;
+	float: right;
+	width: calc(100% - 280px);
+	overflow-y: scroll;
+	padding: {
+		top: 100px;
+		left: 10%;
+		right: 10%;
+	}
+	&::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: $background;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $secondary;
+	}
+	&::-webkit-scrollbar{
+		width: 6px;
+		background-color: $background;
+	}
+}
+
+.logo {
+	display: block;
+	height: 100%;
+	width: 230px;
+	padding-top: 5px;
+	margin-left: 20px;
+}
+.box-shadow-box {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 30px;
+  
+	&_1 {
+		@include box-shadow(1);
+	}
+	
+	&_2 {
+		@include box-shadow(2);
+	}
+	
+	&_3 {
+		@include box-shadow(3);
+	}
+	
+	&_4 {
+		@include box-shadow(4);
+	}
+	
+	&_5 {
+		@include box-shadow(5);
+	}
+}
+.anchor {
+	padding-top: 80px;
+	display: block;
+}  
+.shadow-examples {
+	.box-shadow-box{
+		background-color: white;
+	}
+}
+.card-examples {
+	.tk-card {
+    	width: 430px;
+		margin: 30px;
+		background-color: white;
+    }
+}
+.buttons-examples {
+	.tk-button {
+		margin-right: 36px;
+	}
+	.tk-raised-button {
+		margin-right: 36px;
+	}
+}
+.usage-title {
+	margin-top: 50px;
+}
+.divider {
+	margin-top: 30px;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0,0,0,.12);
+}
+
+@import "media"; // Always at the end

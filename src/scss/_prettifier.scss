@@ -1,0 +1,46 @@
+/* xmptty printing styles. Used with xmpttify.js. */
+/* Vim sunburst theme by David Leibovic */
+
+xmp .str, code .str { color: #65B042; } /* string  - green */
+xmp .kwd, code .kwd { color: #E28964; } /* keyword - dark pink */
+xmp .com, code .com { color: #AEAEAE; font-style: italic; } /* comment - gray */
+xmp .typ, code .typ { color: #89bdff; } /* type - light blue */
+xmp .lit, code .lit { color: #3387CC; } /* literal - blue */
+xmp .pun, code .pun { color: #fff; } /* punctuation - white */
+xmp .pln, code .pln { color: #fff; } /* plaintext - white */
+xmp .tag, code .tag { color: #89bdff; } /* html/xml tag    - light blue */
+xmp .atn, code .atn { color: #bdb76b; } /* html/xml attribute name  - khaki */
+xmp .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
+xmp .dec, code .dec { color: #3387CC; } /* decimal - blue */
+
+xmp.prettyprint, code.prettyprint {
+	background-color: #344955;
+	border-radius: 8px;
+}
+
+xmp.prettyprint {
+	width: 95%;
+	margin: 1em auto;
+	padding: 1em;
+	white-space: pre-wrap;
+}
+
+
+/* Specify class=linenums on a xmp to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+  xmp .str, code .str { color: #060; }
+  xmp .kwd, code .kwd { color: #006; font-weight: bold; }
+  xmp .com, code .com { color: #600; font-style: italic; }
+  xmp .typ, code .typ { color: #404; font-weight: bold; }
+  xmp .lit, code .lit { color: #044; }
+  xmp .pun, code .pun { color: #440; }
+  xmp .pln, code .pln { color: #000; }
+  xmp .tag, code .tag { color: #006; font-weight: bold; }
+  xmp .atn, code .atn { color: #404; }
+  xmp .atv, code .atv { color: #060; }
+}

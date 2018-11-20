@@ -1,0 +1,73 @@
+a(name="simple-card" class="anchor")
+.card-examples
+    h3 Simple Card
+    .tk-card
+        p.tk-card__description Cards are a convenient means of displaying content composed of different types of objects.
+        .tk-card__footer
+            button.tk-button.tk-button_narrow MORE INFO…
+    h3.usage-title Here`s the usage:
+    xmp(class="prettyprint lang-html")
+        |   <div class="tk-card">
+        |       <p class="tk-card__description">
+        |           Cards are a convenient means of displaying content composed of different types of objects.
+        |       </p>
+        |       <div class="tk-card__footer">
+        |           <button class="tk-button tk-button_narrow">MORE INFO…</button>
+        |       </div>
+        |   </div>
+    .divider
+    a(name="titled-card" class="anchor")
+    h3 Titled Card
+    .tk-card
+        span.tk-card__title Card headline title
+        p.tk-card__description Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
+        hr.tk-card__divider
+        .tk-card__footer
+            button.tk-button.tk-button_narrow MORE INFO…
+
+            button.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
+            button.tk-button.tk-button_narrow.tk-button_colored ACCEPT
+    h3.usage-title Here`s the usage:
+    xmp(class="prettyprint lang-html")
+        |   <div class="tk-card">
+        |        <span class="tk-card__title">Card headline title</span>
+        |       <p class="tk-card__description">Lorem ...</p>
+        |       <hr class="tk-card__divider">
+        |       <div class="tk-card__footer">
+        |           <button class="tk-button tk-button_narrow">MORE INFO…</button>
+        |           <button class="tk-card__button_pulled tk-button tk-button_narrow">DECLINE</button>
+        |           <button class="tk-button tk-button_narrow tk-button_colored">ACCEPT</button>
+        |       </div>
+        |   </div>
+    .divider
+    a(name="card-with-header" class="anchor")
+    h3 Card with header
+    .tk-card
+        .tk-card__header
+            img.tk-card__image(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAO86OQOBZXnCjEVnSwz9sZLJ76rSCgjqzlNDR2IJg0fpgGut", alt="Akatsuki")
+            span.tk-card__title.tk-card__title_light Card with image header
+        p.tk-card__description Lorem ... ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
+        hr.tk-card__divider
+        .tk-card__footer
+            button.tk-button.tk-button_narrow MORE INFO…
+
+            button.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
+            button.tk-button.tk-button_narrow.tk-button_colored ACCEPT
+    h3.usage-title Here`s the usage:
+    xmp(class="prettyprint lang-html")
+        |   <div class="tk-card">
+        |        <div class="tk-card__header">
+        |           <img class="tk-card__image" src="..." alt="...">
+        |            <span class="tk-card__title tk-card__title_light">
+        |               Card with image header
+        |            </span>
+        |        </div>
+        |        <p class="tk-card__description">Lorem ...</p>
+        |        <hr class="tk-card__divider">
+        |        <div class="tk-card__footer">
+        |            <button class="tk-button tk-button_narrow">MORE INFO…</button>
+        |            <button class="tk-card__button_pulled tk-button tk-button_narrow">DECLINE</button>
+        |            <button class="tk-button tk-button_narrow tk-button_colored">ACCEPT</button>
+        |        </div>
+        |    </div>
+
