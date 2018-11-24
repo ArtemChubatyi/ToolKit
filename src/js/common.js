@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// ------Sidebar-------
-	$(".sidebar-menu > li.have-children a").on("click", function(){
+	$(".sidebar-menu > li.have-children a").on("click", function(){	
     if( ! $(this).parent().hasClass("active") ){
       $(".sidebar-menu li ul").slideUp();
       $(this).next().slideToggle();

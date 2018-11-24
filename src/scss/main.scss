@@ -5,6 +5,9 @@
 @import "../scss/_mixins/mixin";
 @import "../components/buttons";
 @import "../components/cards";
+@import "../components/icon-buttons";
+@import "../components/floating-buttons";
+
 
 
 ::placeholder {
@@ -209,6 +212,26 @@ b, strong {
 	padding-top: 80px;
 	display: block;
 }  
+.black {
+	color: black;
+}
+.rose {
+	color: #e91e63;
+}
+.bg-rose {
+	background: #e91e63;
+}
+.bg-blue {
+	background: #03a9f4;
+}
+.bg-green {
+	background: #259b24;
+}
+.bg-violet {
+	background: #673ab7;
+}
+// -------------------Examples-Styles------------------
+
 .shadow-examples {
 	.box-shadow-box{
 		background-color: white;
@@ -229,6 +252,27 @@ b, strong {
 		margin-right: 36px;
 	}
 }
+.icon-buttons-wrap {
+	display: flex;
+	p {
+		width: 91px;
+		line-height: 40px;
+		margin: 0;
+		margin-left: 30px;
+		margin-right: 20px;
+		text-align: right;
+	}
+
+}
+.floating-buttons-examples {
+	.floating-buttons-wrap {
+		margin-left: 30px;
+	}
+	.tk-floating-button {
+		margin-right: 36px;
+	}
+}
+
 .usage-title {
 	margin-top: 50px;
 }
