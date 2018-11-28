@@ -2,7 +2,7 @@
 /dist/
 /.git/
 /src/css/
-/src/index.html/
+/src/*.html
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db

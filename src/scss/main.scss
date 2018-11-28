@@ -3,6 +3,7 @@
 @import "libs";
 @import "prettifier";
 @import "../scss/_mixins/mixin";
+@import "../components/dividers";
 @import "../components/buttons";
 @import "../components/cards";
 @import "../components/icon-buttons";
@@ -239,6 +240,15 @@ b, strong {
 		background-color: white;
 	}
 }
+.divider-examples {
+	.divider-wrapper {
+		background-color: #fff;
+		padding: 20px;
+	}
+	.tk-divider {
+		margin: 0;
+	}
+}
 .card-examples {
 	.tk-card {
     	width: 430px;
@@ -278,11 +288,8 @@ b, strong {
 .usage-title {
 	margin-top: 50px;
 }
-.divider {
-	margin-top: 30px;
-	width: 100%;
-	height: 1px;
-	background-color: rgba(0,0,0,.12);
+.tk-divider {
+	margin: 30px 0;
 }
 
 @import "media"; // Always at the end
