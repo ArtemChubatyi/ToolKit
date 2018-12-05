@@ -1,10 +1,6 @@
 // add needed color to the map
 $map-color: (1: #607d8b, 2: #009688, 3: #673ab7, 4: #03a9f4, 5:#e91e63);
 
-* {
-    outline: 1px solid red;
-}
-
 .toolbar {
     display: flex;
     align-items: center;
@@ -25,12 +21,6 @@ $map-color: (1: #607d8b, 2: #009688, 3: #673ab7, 4: #03a9f4, 5:#e91e63);
             align-self: flex-end;
         }
 
-        &_label {
-            flex: 1 1 auto;
-            font-family: $default-font, sans-serif;
-            font-size: 21px;
-            line-height: 40px;
-        }
     }
 
     &_tall {
@@ -45,6 +35,13 @@ $map-color: (1: #607d8b, 2: #009688, 3: #673ab7, 4: #03a9f4, 5:#e91e63);
         &_color_#{$col} {
             background-color: $hex;
         }
+    }
+
+    .label {
+        flex: 1 1 auto;
+        font-family: $default-font, sans-serif;
+        font-size: 21px;
+        line-height: 40px;
     }
 
 }
