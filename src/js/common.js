@@ -13,8 +13,31 @@ $(document).ready(function(){
         }
 	});
 	
-	// --------Menu------
+	// --------Speed dial------
+	$(".tk-speed-dial__button").on("click", function(){	
+		$(".tk-speed-dial ul").slideToggle();
+		$(".tk-speed-dial__item").on("click", function(){	
+			$(".tk-speed-dial ul").slideUp();
+		});
+	});
 
+	// --------Menu whith dropdown------
+	$(".tk-menu__item.have-children > .tk-item__content").on("click", function(){
+		if(!$(this).parent().hasClass("active")) {
+			$(this).parent().addClass("active");
+		} else { 
+			$(this).parent().removeClass("active");
+		}
+		$(this).next().slideToggle();
+		$(".tk-menu__inner-item").on("click", function(){	
+			$(".tk-menu__item ul").slideUp();
+			$(".tk-menu__item").removeClass("active");
+		});
+	});
+
+
+
+	// --------Top bar------
 	var prevScrollPos = window.pageYOffset;
 	window.onscroll = function() {
 		var curentScrollPos = window.pageYOffset;

@@ -6,61 +6,73 @@ a(name="menu-item" class="anchor")
         nav.tk-menu
             ul.tk-menu__list
                 li.tk-menu__item
-                    .tk-icon-box 
-                        i(class="far fa-clock")
-                    p.tk-menu__item-title Recent Articles
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="far fa-clock")
+                        p.tk-menu__item-title Recent Articles
                 li.tk-menu__item 
-                    .tk-icon-box 
-                        i(class="fas fa-archive")
-                    p.tk-menu__item-title Arcives
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="fas fa-archive")
+                        p.tk-menu__item-title Arcives
                 li.tk-menu__item
-                    .tk-icon-box 
-                        i(class="fas fa-check") 
-                    p.tk-menu__item-title Completed
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="fas fa-check") 
+                        p.tk-menu__item-title Completed
                 li.tk-menu__item
-                    .tk-icon-box 
-                        i(class="fab fa-telegram-plane") 
-                    p.tk-menu__item-title Send
-                    .tk-info-box_pulled
-                        i(class="fas fa-info-circle")
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="fab fa-telegram-plane") 
+                        p.tk-menu__item-title Send
+                        .tk-info-box_pulled
+                            i(class="fas fa-info-circle")
                 li.tk-menu__item
-                    .tk-icon-box 
-                        i(class="fas fa-trash") 
-                    p.tk-menu__item-title Trash
-                    .tk-info-box_pulled
-                        i(class="fas fa-info-circle")
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="fas fa-trash") 
+                        p.tk-menu__item-title Trash
+                        .tk-info-box_pulled
+                            i(class="fas fa-info-circle")
                 li.tk-menu__item
-                    .tk-icon-box 
-                        i(class="far fa-star") 
-                    p.tk-menu__item-title Starred
-                    .tk-info-box_pulled
-                        i(class="fas fa-info-circle")
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="far fa-star") 
+                        p.tk-menu__item-title Starred
+                        .tk-info-box_pulled
+                            i(class="fas fa-info-circle")
                 li.tk-menu__item
-                    .tk-icon-box 
-                        i(class="far fa-comments") 
-                    p.tk-menu__item-title Forums
-                    .tk-info-box_pulled
-                        i(class="fas fa-info-circle")
-                li.tk-menu__item 
-                    .tk-icon-box 
-                        i(class="far fa-flag") 
-                    p.tk-menu__item-title Updates
-                    .tk-info-box_pulled
-                        i(class="fas fa-info-circle")
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="far fa-comments") 
+                        p.tk-menu__item-title Forums
+                        .tk-info-box_pulled
+                            i(class="fas fa-info-circle")
+                li.tk-menu__item
+                    .tk-item__content 
+                        .tk-icon-box 
+                            i(class="far fa-flag") 
+                        p.tk-menu__item-title Updates
+                        .tk-info-box_pulled
+                            i(class="fas fa-info-circle")
 
     h3.usage-title Here`s the usage:
     xmp(class="prettyprint lang-html")
         |   <nav class="tk-menu">
         |       <ul class="tk-menu__list">
         |           <li class="tk-menu__item">
-        |              <div class="tk-icon-box"><i class="far fa-clock"></i></div>
-        |              <p class="tk-menu__item-title">Recent Articles</p>
-        |           </li>
+        |                <div class="tk-item__content">
+        |                   <div class="tk-icon-box"><i class="far fa-clock"></i></div>
+        |                   <p class="tk-menu__item-title">Recent Articles</p>
+        |                </div>
+        |            </li>
         |           <!-- ........... -->
         |           <li class="tk-menu__item">
-        |               <div class="tk-icon-box"> <i class="far fa-flag"> </i></div>
-        |               <p class="tk-menu__item-title">Updates</p>
-        |               <div class="tk-info-box_pulled"><i class="fas fa-info-circle"></i></div>
+        |               <div class="tk-item__content">
+        |                  <div class="tk-icon-box"> <i class="far fa-flag"> </i></div>
+        |                  <p class="tk-menu__item-title">Updates</p>
+        |                  <div class="tk-info-box_pulled"><i class="fas fa-info-circle"></i></div>
+        |               </div>
         |           </li>
         |       </ul>
         |   </nav>

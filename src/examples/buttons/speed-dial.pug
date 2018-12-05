@@ -1,0 +1,27 @@
+a(name="speed-dial" class="anchor")
+.speed-dial-examples
+    h2 Speed Dial Button
+    .tk-speed-dial
+        button.tk-speed-dial__button.tk-floating-button
+            i.fas.fa-bars
+        ul(style="display: none;")
+            li
+                button.tk-floating-button.tk-floating-button_mini.tk-speed-dial__item
+                    i.fas.fa-times
+            li
+                button.tk-floating-button.tk-floating-button_mini.tk-speed-dial__item
+                    i.fas.fa-heart
+            li
+                button.tk-floating-button.tk-floating-button_mini.tk-speed-dial__item
+                    i.fas.fa-pen    
+
+    h3.usage-title Here`s the usage:
+    xmp(class="prettyprint lang-html")
+        |   <div class="tk-speed-dial">
+        |       <button class="tk-speed-dial__button tk-floating-button"><i class="fas fa-bars"></i></button>
+        |       <ul style="display: none;">
+        |           <li><button class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"><i class="fas fa-times"></i></button></li>
+        |           <li><button class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"><i class="fas fa-heart"></i></button></li>
+        |           <li><button class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"><i class="fas fa-pen"></i></button></li>
+        |       </ul>
+        |   </div>

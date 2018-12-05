@@ -45,6 +45,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'src/libs/jquery/dist/jquery.min.js',
 		'src/libs/microlight/microlight.js',
+		'src/libs/ripple/ripple.min.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

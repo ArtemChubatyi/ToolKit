@@ -1,0 +1,20 @@
+.tk-menu__inner {
+    list-style-type: none;
+}
+.tk-menu__item {
+    display: flex;
+    flex-direction: column;
+    &.active {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+}
+.tk-item__content {
+    display: flex;
+    align-items: center;
+    .tk-item__title {
+        margin: 0;
+    }
+}
+.acive {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}

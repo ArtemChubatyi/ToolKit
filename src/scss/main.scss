@@ -9,6 +9,9 @@
 @import "../components/icon-buttons";
 @import "../components/floating-buttons";
 @import "../components/menu";
+@import "../components/menu-dropdown";
+@import "../libs/ripple/ripple";
+@import "../components/speed-dial";
 
 
 
@@ -249,6 +252,10 @@ b, strong {
 		margin: 0;
 	}
 }
+
+.tk-raised-button {
+	position: relative;
+}
 .card-examples {
 	.tk-card {
     	width: 430px;
@@ -282,6 +289,34 @@ b, strong {
 	}
 	.tk-floating-button {
 		margin-right: 36px;
+	}
+}
+.speed-dial-examples {
+	.tk-speed-dial {
+		width: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__button {
+			background: #f54a29;
+			transition: .2s;
+			&:active {
+				background: #9c311c;
+			}
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li {
+				margin-top: 25px;
+				margin-left: 0;
+			}
+		}
 	}
 }
 
