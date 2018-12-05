@@ -2,4 +2,60 @@
     a(name="toolbars" class="anchor")
     h2 Toolbars
 
-    .toolbar Toolbar
+    //-regular
+    .toolbar.toolbar_color_1
+        button.toolbar__item.tk-icon-button.white
+            i.fas.fa-bars
+        span.toolbar__item.toolbar__item_label.white
+            | Toolbar
+        button.toolbar__item.tk-icon-button.white
+            i.fas.fa-redo
+        button.toolbar__item.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-tall
+    .toolbar.toolbar_color_2.toolbar_tall
+        button.toolbar__item.toolbar__item_top.tk-icon-button.white
+            i.fas.fa-bars
+        span.toolbar__item.toolbar__item_top.toolbar__item_label.white
+            | Toolbar: tall
+        button.toolbar__item.toolbar__item_top.tk-icon-button.white
+            i.fas.fa-redo
+        button.toolbar__item.toolbar__item_top.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-tall, label and button bottom
+    .toolbar.toolbar_color_3.toolbar_tall
+        button.toolbar__item.toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-bars
+        span.toolbar__item.toolbar__item_bottom.toolbar__item_label.white
+            | Toolbar: tall with items aligned to the bottom
+        button.toolbar__item.toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-redo
+        button.toolbar__item.toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-medium, label and buttons top
+    .toolbar.toolbar_color_4.toolbar_medium
+        button.toolbar__item.toolbar__item_top.tk-icon-button.white
+            i.fas.fa-bars
+        span.toolbar__item.toolbar__item_bottom.toolbar__item_label.white
+            | Toolbar: medium-tall with labels aligned to the bottom
+        button.toolbar__item.toolbar__item_top.tk-icon-button.white
+            i.fas.fa-redo
+        button.toolbar__item.toolbar__item_top.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-tall, label middel and button bottom
+    .toolbar.toolbar_color_5.toolbar_tall
+        button.toolbar__item.toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-bars
+        span.toolbar__item.toolbar__item_label.white
+            | Toolbar: tall with labels aligned to the middle <br>
+            | Toolbar items aligned to the bottom
+        button.toolbar__item.toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-redo
+        button.toolbar__item.toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+

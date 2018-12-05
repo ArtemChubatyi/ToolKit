@@ -222,6 +222,9 @@ b, strong {
 .black {
 	color: black;
 }
+.white {
+	color: white;
+}
 .rose {
 	color: #e91e63;
 }
@@ -321,11 +324,17 @@ b, strong {
 	}
 }
 
+.toolbars-examples {
+	.toolbar {
+		margin-bottom: 30px;
+	}
+}
 .usage-title {
 	margin-top: 50px;
 }
 .tk-divider {
 	margin: 30px 0;
 }
+
 
 @import "media"; // Always at the end
