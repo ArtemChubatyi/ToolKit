@@ -1,0 +1,28 @@
+.toast-examples
+    a(name="toast" class="anchor")
+    h2 Toast
+    .wraper
+        .tk-toast
+            span.tk-toast__text Your draft has been discarded.
+
+    .wraper
+        .tk-toast
+            span.tk-toast__text Connection timed out. Showing limited messages.
+            .tk-toast__action-wrapper
+                button.tk-button.tk-toast__button.lemon retry
+    .wraper
+        .tk-toast.tk-toast_rounded
+            span.tk-toast__text Message sent
+
+    button.tk-raised-button show toast
+
+    h3.usage-title Here`s the usage:
+    xmp(class="prettyprint lang-html")
+        | <!-- ancestor must be positioned statically or root element -->
+        | <div class="tk-toast">
+        |   <span class ="tk-toast__text">Your text</span>
+        |   <div class ="tk-toast__action-wrapper">
+        |   <!-- Your action element -->
+        |     <buttom>Your button</buttom>
+        |   </div>
+        | </div>

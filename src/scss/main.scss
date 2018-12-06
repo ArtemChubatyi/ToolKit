@@ -13,6 +13,7 @@
 @import "../libs/ripple/ripple";
 @import "../components/speed-dial";
 @import "../components/toolbars";
+@import "../components/toast";
 
 
 
@@ -228,6 +229,9 @@ b, strong {
 .rose {
 	color: #e91e63;
 }
+.lemon {
+	color: #eeff41;
+}
 .bg-rose {
 	background: #e91e63;
 }
@@ -326,12 +330,18 @@ b, strong {
 }
 
 .toolbars-examples {
-	width: 800px;
-
 	.tk-toolbar {
 		margin-bottom: 30px;
 	}
 }
+
+.toast-examples {
+	.tk-toast {
+		position: static;
+		margin-bottom: 20px;
+	}
+}
+
 .usage-title {
 	margin-top: 50px;
 }

@@ -44,5 +44,11 @@ html(lang="en")
           .tk-divider
           include examples/toolbars/toolbars
           .tk-divider
-          
+          include examples/modals/toasts
+          .tk-divider
+          .tk-toast.tk-toast_show
+              span.tk-toast__text Showing toast messages.
+              .tk-toast__action-wrapper
+                  button.tk-button.tk-toast__button.lemon retry
+
     script(src="js/scripts.min.js")

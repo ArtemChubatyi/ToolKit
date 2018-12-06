@@ -1,0 +1,40 @@
+.tk-toast {
+    position: fixed;
+    bottom: -200%;
+    left: 50px;
+    min-width: 290px;
+    // object-position: 50% 50%; 
+
+    display: inline-flex;
+    border-radius: 3px;
+    background-color: #323232;
+    transition: all .3s ease-in-out;
+
+    &__text {
+        position: relative;
+        margin: 15px 25px;
+
+        color: white;
+        font-family: $default-font;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    &__action-wrapper {
+        position: relative;
+        align-self: center;
+        margin-left: -15px;
+    }
+
+    &__button {
+        padding: 15px 25px;
+    }
+
+    &_rounded {
+        border-radius: 24px;
+    }
+
+    &_show {
+        transform: translate(200px, 200px);
+    }
+}

@@ -35,8 +35,12 @@ $(document).ready(function(){
 		});
 	});
 
-
-
+    // --------modal toast------
+    $('button').on("click", function(){
+        setTimeout(()=>{
+            $('#toast-test').addClass("tk-toast-show")
+        }, 5000);
+    });
 	// --------Top bar------
 	var prevScrollPos = window.pageYOffset;
 	window.onscroll = function() {
