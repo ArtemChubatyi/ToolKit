@@ -248,8 +248,8 @@ b, strong {
 	}
 }
 .divider-examples {
-	.divider-wrapper {
-		background-color: #fff;
+	.wrapper {
+		width: 400px;
 		padding: 20px;
 	}
 	.tk-divider {
@@ -260,6 +260,7 @@ b, strong {
 .tk-raised-button {
 	position: relative;
 }
+
 .card-examples {
 	.tk-card {
     	width: 430px;
@@ -325,7 +326,9 @@ b, strong {
 }
 
 .toolbars-examples {
-	.toolbar {
+	width: 800px;
+
+	.tk-toolbar {
 		margin-bottom: 30px;
 	}
 }

@@ -69,10 +69,10 @@ gulp.task('rsync', function() {
 	}))
 });
 
-gulp.task('watch', ['styles', 'js', 'pug', 'browser-sync'], function() {
+gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch('src/**/*.'+syntax+'', ['styles']);
 	gulp.watch(['libs/**/*.js', 'src/js/common.js'], ['js']);
-	gulp.watch('src/**/*.pug', ['pug'], browserSync.reload)
+	gulp.watch('src/**/*.pug', ['pug'], browserSync.reload({ stream: true }))
 });
 
 gulp.task('default', ['watch']);
