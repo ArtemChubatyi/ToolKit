@@ -12,6 +12,8 @@
 @import "../components/menu-dropdown";
 @import "../libs/ripple/ripple";
 @import "../components/speed-dial";
+@import "../components/tabs";
+
 
 
 
@@ -300,9 +302,6 @@ b, strong {
 		&__button {
 			background: #f54a29;
 			transition: .2s;
-			&:active {
-				background: #9c311c;
-			}
 		}
 		ul {
 			display: flex;
@@ -325,6 +324,21 @@ b, strong {
 }
 .tk-divider {
 	margin: 30px 0;
+}
+
+.tabs-examples {
+	.tk-tabs:last-child {
+		margin-top: 30px;
+		.slide {
+			background: #00bcd7;
+		}
+		.tk-tabs__item {
+			.tk-tabs__button {
+				background: transparent;
+				color: #00bcd7;
+			}
+		}
+	}
 }
 
 @import "media"; // Always at the end
