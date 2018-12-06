@@ -1,0 +1,73 @@
+a(name="tabs" class="anchor")
+.tabs-examples
+    h2 Tabs
+    .tabs-wrap
+        p A. No ink effect and no sliding bar
+        .tk-tabs.tk-tabs-simple
+            .tk-tabs__item.active
+                button.tk-tabs__button item one 
+            .tk-tabs__item
+                button.tk-tabs__button item two
+            .tk-tabs__item
+                button.tk-tabs__button item three
+        p B. The bar slides to the selected tab
+        .tk-tabs.tk-tabs-slide
+            .tk-tabs__item.active
+                button.tk-tabs__button item one 
+            .tk-tabs__item
+                button.tk-tabs__button item two
+            .tk-tabs__item
+                button.tk-tabs__button item three
+            .slide
+        p C. Inky Tabs
+        .tk-tabs.tk-tabs-slide
+            .tk-tabs__item.active
+                button.tk-tabs__button item one
+                .rippleJS
+            .tk-tabs__item
+                button.tk-tabs__button item two
+                .rippleJS
+            .tk-tabs__item
+                button.tk-tabs__button item three
+                .rippleJS
+            .slide
+        .tk-tabs.tk-tabs-slide
+            .tk-tabs__item.active
+                button.tk-tabs__button item one
+                .rippleJS
+            .tk-tabs__item
+                button.tk-tabs__button item two
+                .rippleJS
+            .tk-tabs__item
+                button.tk-tabs__button item three
+                .rippleJS
+            .slide
+
+    h3.usage-title Here`s the usage:
+    xmp(class="prettyprint lang-html")
+        |   <!-- Simple Tab -->
+        |   <div class="tk-tabs tk-tabs-simple">
+        |       <div class="tk-tabs__item">
+        |           <button class="tk-tabs__button">item one </button>
+        |       </div>
+        |       <div class="tk-tabs__item">
+        |           <button class="tk-tabs__button">item two</button>
+        |       </div>
+        |       <div class="tk-tabs__item active">
+        |           <button class="tk-tabs__button">item three</button>
+        |       </div>
+        |   </div>
+        |
+        |   <!-- Tab with slide -->
+        |   <div class="tk-tabs tk-tabs-slide">
+        |       <div class="tk-tabs__item active">
+        |           <button class="tk-tabs__button">item one </button>
+        |       </div>
+        |       <div class="tk-tabs__item">
+        |           <button class="tk-tabs__button">item two</button>
+        |       </div>
+        |       <div class="tk-tabs__item">
+        |           <button class="tk-tabs__button">item three</button>
+        |       </div>
+        |       <div class="slide"></div>
+        |   </div>
