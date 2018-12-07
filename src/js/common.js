@@ -44,6 +44,19 @@ $(document).ready(function() {
         }, 4000);
     }
 
+    // --------modal dialog------
+    let modal = document.querySelector('.dialog-modal');
+    let overflow = document.createElement('div');
+    function openModal() {
+        overflow.className = "overflow";
+        document.body.appendChild(overflow);
+        modal.style.display = "flex";
+    }
+
+    overflow.onclick = function () {
+        modal.style.display = "none"
+    }
+
     // --------Top bar------
     var prevScrollPos = window.pageYOffset;
     window.onscroll = function() {

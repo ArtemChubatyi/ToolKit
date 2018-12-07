@@ -2,13 +2,15 @@
     @include box-shadow(2);
     background-color: #fff;
 
+    position: fixed;
     height: 430px;
     width: 430px;
+    top: calc(50% - 215px);
+    left: calc(50% - 215px);
 
     display: flex;
     flex-flow: column;
 
-    
     &__title {
         margin: 20px 25px;
         font-family: $bold-font;
