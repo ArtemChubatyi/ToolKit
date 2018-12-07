@@ -1,9 +1,8 @@
 .tk-toast {
     position: fixed;
-    bottom: -200%;
-    left: 50px;
+    top: 110%; 
+    right: 5%;
     min-width: 290px;
-    // object-position: 50% 50%; 
 
     display: inline-flex;
     border-radius: 3px;
@@ -35,6 +34,6 @@
     }
 
     &_show {
-        transform: translate(200px, 200px);
+        top: 90%;
     }
 }

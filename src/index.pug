@@ -5,6 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
+        script(src="libs/jquery/dist/jquery.min.js")
         script(src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
         link(rel="stylesheet", href="css/main.min.css")
@@ -46,9 +47,5 @@ html(lang="en")
           .tk-divider
           include examples/modals/toasts
           .tk-divider
-          .tk-toast.tk-toast_show
-              span.tk-toast__text Showing toast messages.
-              .tk-toast__action-wrapper
-                  button.tk-button.tk-toast__button.lemon retry
 
     script(src="js/scripts.min.js")

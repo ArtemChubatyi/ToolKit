@@ -1,20 +1,25 @@
 .toast-examples
     a(name="toast" class="anchor")
     h2 Toast
-    .wraper
+    .wrapper
         .tk-toast
             span.tk-toast__text Your draft has been discarded.
 
-    .wraper
+    .wrapper
         .tk-toast
             span.tk-toast__text Connection timed out. Showing limited messages.
             .tk-toast__action-wrapper
                 button.tk-button.tk-toast__button.lemon retry
-    .wraper
+    .wrapper
         .tk-toast.tk-toast_rounded
             span.tk-toast__text Message sent
 
+    // demo toast modal
     button.tk-raised-button show toast
+    .tk-toast
+        span.tk-toast__text Showing toast messages.
+        .tk-toast__action-wrapper
+            button.tk-button.tk-toast__button.lemon retry
 
     h3.usage-title Here`s the usage:
     xmp(class="prettyprint lang-html")

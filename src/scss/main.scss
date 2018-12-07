@@ -336,9 +336,11 @@ b, strong {
 }
 
 .toast-examples {
-	.tk-toast {
-		position: static;
-		margin-bottom: 20px;
+	.wrapper {
+		.tk-toast {
+			position: static;
+			margin-bottom: 20px;
+		}
 	}
 }
 
