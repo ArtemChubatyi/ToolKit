@@ -1,10 +1,24 @@
 .divider-examples
     h2 Divider
-    .divider-wrapper
+    .wrapper.tk-menu
+        li.tk-menu__item
+            .tk-item__content 
+                .tk-icon-box 
+                    i.far.fa-comments
+                p.tk-menu__item-title Forums
+                .tk-info-box_pulled
+                    i.fas.fa-info-circle
         .tk-divider
+        li.tk-menu__item
+            .tk-item__content 
+                .tk-icon-box 
+                    i.far.fa-flag 
+                p.tk-menu__item-title Updates
+                .tk-info-box_pulled
+                    i.fas.fa-info-circle
 
     h3.usage-title Here`s the usage:
     xmp(class="prettyprint lang-html")
         |   <button class="tk-button">Button</button>
-        |   <hr class="tk-divider">
+        |   <div class="tk-divider">
         |   <button class="tk-button">Disable</button>

@@ -12,8 +12,8 @@
 @import "../components/menu-dropdown";
 @import "../libs/ripple/ripple";
 @import "../components/speed-dial";
+@import "../components/toolbars";
 @import "../components/tabs";
-
 
 
 
@@ -223,6 +223,9 @@ b, strong {
 .black {
 	color: black;
 }
+.white {
+	color: white;
+}
 .rose {
 	color: #e91e63;
 }
@@ -246,8 +249,8 @@ b, strong {
 	}
 }
 .divider-examples {
-	.divider-wrapper {
-		background-color: #fff;
+	.wrapper {
+		width: 400px;
 		padding: 20px;
 	}
 	.tk-divider {
@@ -258,6 +261,7 @@ b, strong {
 .tk-raised-button {
 	position: relative;
 }
+
 .card-examples {
 	.tk-card {
     	width: 430px;
@@ -319,6 +323,13 @@ b, strong {
 	}
 }
 
+.toolbars-examples {
+	width: 800px;
+
+	.tk-toolbar {
+		margin-bottom: 30px;
+	}
+}
 .usage-title {
 	margin-top: 50px;
 }
@@ -343,5 +354,6 @@ b, strong {
 	}
 	
 }
+
 
 @import "media"; // Always at the end
