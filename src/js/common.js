@@ -43,6 +43,10 @@ $(document).ready(function(){
 		}
 	})
 
+	$(".tk-tabs-title").on("click", function () {
+		$(this).next().slideToggle();
+	})
+
 	// --------Top bar------
 	var prevScrollPos = window.pageYOffset;
 	window.onscroll = function() {

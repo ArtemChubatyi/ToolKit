@@ -71,3 +71,17 @@ a(name="tabs" class="anchor")
         |       </div>
         |       <div class="slide"></div>
         |   </div>
+
+    .tabs-titled-wrap
+        p Tabs with title
+        .tk-tabs-title
+            i.fas.fa-bars
+            p.tk-tabs-title__text  Title
+        .tk-tabs.tk-tabs-slide(style="display: none;")
+            .tk-tabs__item.active
+                button.tk-tabs__button item one 
+            .tk-tabs__item
+                button.tk-tabs__button item two
+            .tk-tabs__item
+                button.tk-tabs__button item three
+            .slide

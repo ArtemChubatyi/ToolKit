@@ -48,7 +48,7 @@ $num-of-tabs: 3;
         height: 3px;
         position: absolute;
         left: 0;
-        top: calc(100% - 3px);
+        top: 45px;
         transition: left 0.3s ease-out;
     }
     .tk-tabs__item {
@@ -58,5 +58,23 @@ $num-of-tabs: 3;
                 color: #fff;
             }
         }
+    }
+}
+.tk-tabs-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #00bcd7;
+    color: white;
+    height: 48px;
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    i {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    p {
+        font-size: 21px;
+        margin: 0;
     }
 }
