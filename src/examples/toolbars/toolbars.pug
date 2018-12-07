@@ -1,0 +1,69 @@
+.toolbars-examples
+    a(name="toolbars" class="anchor")
+    h2 Toolbars
+
+    //-regular
+    .tk-toolbar.tk-toolbar_color_1
+        button.tk-toolbar__item.tk-icon-button.white
+            i.fas.fa-bars
+        span.tk-toolbar__label.white
+            | Toolbar
+        button.tk-toolbar__item.tk-icon-button.white
+            i.fas.fa-redo
+        button.tk-toolbar__item.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-tall
+    .tk-toolbar.tk-toolbar_color_2.tk-toolbar_tall
+        button.tk-toolbar__item.tk-toolbar__item_top.tk-icon-button.white
+            i.fas.fa-bars
+        span.tk-toolbar__label.tk-toolbar__item_top.white
+            | Toolbar: tall
+        button.tk-toolbar__item.tk-toolbar__item_top.tk-icon-button.white
+            i.fas.fa-redo
+        button.tk-toolbar__item.tk-toolbar__item_top.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-tall, label and button bottom
+    .tk-toolbar.tk-toolbar_color_3.tk-toolbar_tall
+        button.tk-toolbar__item.tk-toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-bars
+        span.tk-toolbar__label.tk-toolbar__item_bottom.white
+            | Toolbar: tall with items aligned to the bottom
+        button.tk-toolbar__item.tk-toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-redo
+        button.tk-toolbar__item.tk-toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-medium, label and buttons top
+    .tk-toolbar.tk-toolbar_color_4.tk-toolbar_medium
+        button.tk-toolbar__item.tk-toolbar__item_top.tk-icon-button.white
+            i.fas.fa-bars
+        span.tk-toolbar__label.tk-toolbar__item_bottom.white
+            | Toolbar: medium-tall with labels aligned to the bottom
+        button.tk-toolbar__item.tk-toolbar__item_top.tk-icon-button.white
+            i.fas.fa-redo
+        button.tk-toolbar__item.tk-toolbar__item_top.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    //-tall, label middel and button bottom
+    .tk-toolbar.tk-toolbar_color_5.tk-toolbar_tall
+        button.tk-toolbar__item.tk-toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-bars
+        span.tk-toolbar__label.white
+            | Toolbar: tall with labels aligned to the middle
+            | items aligned to the bottom
+        button.tk-toolbar__item.tk-toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-redo
+        button.tk-toolbar__item.tk-toolbar__item_bottom.tk-icon-button.white
+            i.fas.fa-ellipsis-v
+
+    h3.usage-title Here`s the usage:
+        xmp(class="prettyprint lang-html")
+            | <!-- Toolbar: tall with items aligned to the top -->
+            | <div class="tk-toolbar tk-toolbar_color tk-toolbar_tall">
+            |   <div class ="tk-toolbar__item tk-toolbar__item_top button">
+            |   <div class ="tk-toolbar__item tk-toolbar__item_top label">
+            |   <div class ="tk-toolbar__item tk-toolbar__item_top button">
+            |   <div class ="tk-toolbar__item tk-toolbar__item_top button">
+            | </div>
