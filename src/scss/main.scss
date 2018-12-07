@@ -14,130 +14,131 @@
 @import "../components/speed-dial";
 @import "../components/toolbars";
 @import "../components/toast";
+@import "../components/dialog";
 
 
 
 
 ::placeholder {
-	color: #666;
+    color: #666;
 }
 
 ::selection {
-	background-color: $accent;
-	color: #fff;
+    background-color: $accent;
+    color: #fff;
 }
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: $default-font;
+    overflow-x: hidden;
+    color: $text;
+    input, textarea {
+        border: #666 1px solid;
+        outline: none;
+        &:focus:required:invalid {
+            border-color: red;
+        }
+        &:required:valid {
+            border-color: green;
+        }
+    }
 }
 
 .img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
+    display: block;
+    max-width: 100%;
+    height: auto;
+    &.img-width {
+        width: 100%;
+    }
 }
 
 .text-center {
-	text-align: center;
+    text-align: center;
 }
 
 b, strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .header {
-	background-color: $primary;
-	position: fixed;
-	width: 100%;
-	height: 72px;
-	z-index: 10;
-	box-shadow: 0 2px 4px rgba(0,0,0,.5);
-	transition: linear .3s;
+    background-color: $primary;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    transition: linear .3s;
 }
 .sidebar {
-	width: 280px;
-	background-color: $background;
-	overflow-y: scroll;
-	height: 100vh;
-	position: fixed;
-	&::-webkit-scrollbar-track {
-		border-radius: 10px;
-		background-color: $background;
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background-color: $secondary;
-	}
-	&::-webkit-scrollbar{
-		width: 6px;
-		background-color: $background;
-	}
+    width: 280px;
+    background-color: $background;
+    overflow-y: scroll;
+    height: 100vh;
+    position: fixed;
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: $background;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $secondary;
+    }
+    &::-webkit-scrollbar{
+        width: 6px;
+        background-color: $background;
+    }
 }
 .sidebar-menu {
     margin: 0;
     padding: 0;
     max-width: 280px;
     list-style: none;
-	list-style-type: none;
-	margin-top: 8px;
-	&__item {
-		background-color: $background;
-		padding: 20px 25px;
-		display: block;
-		text-decoration: none;
-		color: $primary;
-		transition: ease .3s;
-		position: relative;
-		
-		&:hover {
-			z-index: 9;
-			padding: 20px 25px;
-			background-color: $secondary;
-			// box-shadow: 0 0 10px rgba(0,0,0,0.5);
-		}
-	}
-	&__item-inner {
-		margin-right: 20px;
-  		color: $primary;	
-	}
+    list-style-type: none;
+    margin-top: 8px;
+    &__item {
+        background-color: $background;
+        padding: 20px 25px;
+        display: block;
+        text-decoration: none;
+        color: $primary;
+        transition: ease .3s;
+        position: relative;
+        
+        &:hover {
+            z-index: 9;
+            padding: 20px 25px;
+            background-color: $secondary;
+            // box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    }
+    &__item-inner {
+        margin-right: 20px;
+        color: $primary;    
+    }
 }
 
 .have-children ul {
-	padding: 0px;
+    padding: 0px;
 } 
 
 .have-children ul li a {
-	padding-left: 62px;
+    padding-left: 62px;
 }
 .have-children ul li a:hover {
-	padding-left: 94px;
-	
+    padding-left: 94px;
+    
 } 
 .have-children, li {
-	position: relative;
+    position: relative;
 }
 .have-children span::after {
   position: absolute;
@@ -149,46 +150,46 @@ b, strong {
   transition: all .5s;
 }
 .active.have-children span::after {
-	-moz-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 .sidebar-menu .have-children > ul {
     display: none;
 }
 .content {
-	box-sizing: border-box;
-	background-color: $background;
-	height: auto;
-	float: right;
-	width: calc(100% - 280px);
-	overflow-y: scroll;
-	padding: {
-		top: 100px;
-		left: 10%;
-		right: 10%;
-	}
-	&::-webkit-scrollbar-track {
-		border-radius: 10px;
-		background-color: $background;
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background-color: $secondary;
-	}
-	&::-webkit-scrollbar{
-		width: 6px;
-		background-color: $background;
-	}
+    box-sizing: border-box;
+    background-color: $background;
+    height: auto;
+    float: right;
+    width: calc(100% - 280px);
+    overflow-y: scroll;
+    padding: {
+        top: 100px;
+        left: 10%;
+        right: 10%;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: $background;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $secondary;
+    }
+    &::-webkit-scrollbar{
+        width: 6px;
+        background-color: $background;
+    }
 }
 
 .logo {
-	display: block;
-	height: 100%;
-	width: 230px;
-	padding-top: 5px;
-	margin-left: 20px;
+    display: block;
+    height: 100%;
+    width: 230px;
+    padding-top: 5px;
+    margin-left: 20px;
 }
 .box-shadow-box {
     width: 150px;
@@ -196,159 +197,174 @@ b, strong {
     display: inline-block;
     margin: 30px;
   
-	&_1 {
-		@include box-shadow(1);
-	}
-	
-	&_2 {
-		@include box-shadow(2);
-	}
-	
-	&_3 {
-		@include box-shadow(3);
-	}
-	
-	&_4 {
-		@include box-shadow(4);
-	}
-	
-	&_5 {
-		@include box-shadow(5);
-	}
+    &_1 {
+        @include box-shadow(1);
+    }
+    
+    &_2 {
+        @include box-shadow(2);
+    }
+    
+    &_3 {
+        @include box-shadow(3);
+    }
+    
+    &_4 {
+        @include box-shadow(4);
+    }
+    
+    &_5 {
+        @include box-shadow(5);
+    }
 }
 .anchor {
-	padding-top: 80px;
-	display: block;
+    padding-top: 80px;
+    display: block;
 }  
 .black {
-	color: black;
+    color: black;
 }
 .white {
-	color: white;
+    color: white;
 }
 .rose {
-	color: #e91e63;
+    color: #e91e63;
 }
 .lemon {
-	color: #eeff41;
+    color: #eeff41;
 }
 .bg-rose {
-	background: #e91e63;
+    background: #e91e63;
 }
 .bg-blue {
-	background: #03a9f4;
+    background: #03a9f4;
 }
 .bg-green {
-	background: #259b24;
+    background: #259b24;
 }
 .bg-violet {
-	background: #673ab7;
+    background: #673ab7;
 }
 // -------------------Examples-Styles------------------
 
 .shadow-examples {
-	.box-shadow-box{
-		background-color: white;
-	}
+    .box-shadow-box{
+        background-color: white;
+    }
 }
 .divider-examples {
-	.wrapper {
-		width: 400px;
-		padding: 20px;
-	}
-	.tk-divider {
-		margin: 0;
-	}
+    .wrapper {
+        width: 400px;
+        padding: 20px;
+    }
+    .tk-divider {
+        margin: 0;
+    }
 }
 
 .tk-raised-button {
-	position: relative;
+    position: relative;
 }
 
 .card-examples {
-	.tk-card {
-    	width: 430px;
-		margin: 30px;
-		background-color: white;
+    .tk-card {
+        width: 430px;
+        margin: 30px;
+        background-color: white;
     }
 }
 .buttons-examples {
-	.tk-button {
-		margin-right: 36px;
-	}
-	.tk-raised-button {
-		margin-right: 36px;
-	}
+    .tk-button {
+        margin-right: 36px;
+    }
+    .tk-raised-button {
+        margin-right: 36px;
+    }
 }
 .icon-buttons-wrap {
-	display: flex;
-	p {
-		width: 91px;
-		line-height: 40px;
-		margin: 0;
-		margin-left: 30px;
-		margin-right: 20px;
-		text-align: right;
-	}
+    display: flex;
+    
+    p {
+        width: 91px;
+        line-height: 40px;
+        margin: 0;
+        margin-left: 30px;
+        margin-right: 20px;
+        text-align: right;
+    }
 
 }
 .floating-buttons-examples {
-	.floating-buttons-wrap {
-		margin-left: 30px;
-	}
-	.tk-floating-button {
-		margin-right: 36px;
-	}
+    .floating-buttons-wrap {
+        margin-left: 30px;
+    }
+
+    .tk-floating-button {
+        margin-right: 36px;
+    }
 }
+
 .speed-dial-examples {
-	.tk-speed-dial {
-		width: 100px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		&__button {
-			background: #f54a29;
-			transition: .2s;
-			&:active {
-				background: #9c311c;
-			}
-		}
-		ul {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			width: 100%;
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			li {
-				margin-top: 25px;
-				margin-left: 0;
-			}
-		}
-	}
+    .tk-speed-dial {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__button {
+            background: #f54a29;
+            transition: .2s;
+            &:active {
+                background: #9c311c;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-top: 25px;
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 .toolbars-examples {
-	.tk-toolbar {
-		margin-bottom: 30px;
-	}
+    .tk-toolbar {
+        margin-bottom: 30px;
+    }
 }
 
 .toast-examples {
-	.wrapper {
-		.tk-toast {
-			position: static;
-			margin-bottom: 20px;
-		}
-	}
+    .wrapper {
+        .tk-toast {
+            position: static;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.dialog-examples {
+    .wrapper {
+        .tk-dialog {
+            position: static;
+        }
+    }
 }
 
 .usage-title {
-	margin-top: 50px;
+    margin-top: 50px;
 }
+
 .tk-divider {
-	margin: 30px 0;
+    margin: 30px 0;
 }
 
 

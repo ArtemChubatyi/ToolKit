@@ -1,0 +1,20 @@
+.dialog-examples
+    a(name="dialog" class="anchor")
+    h2 Dialog
+    .wrapper
+        .tk-dialog
+
+    // demo dialog modal
+    button.tk-raised-button show dialog
+    .tk-dialog
+
+    h3.usage-title Here`s the usage:
+    xmp(class="prettyprint lang-html")
+        | <!-- ancestor must be positioned statically or root element -->
+        | <div class="tk-toast">
+        |   <span class ="tk-toast__text">Your text</span>
+        |   <div class ="tk-toast__action-wrapper">
+        |   <!-- Your action element -->
+        |     <buttom>Your button</buttom>
+        |   </div>
+        | </div>
