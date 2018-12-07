@@ -17,7 +17,15 @@
 @import "../components/dialog";
 
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+p {
+    margin: .5em 0;
+}
 
 ::placeholder {
     color: #666;
