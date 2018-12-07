@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     // --------Top bar------
     var prevScrollPos = window.pageYOffset;
-    window.onScroll = function() {
+    window.onscroll = function() {
         var curentScrollPos = window.pageYOffset;
         if (prevScrollPos > curentScrollPos) {
             document.getElementById('header').style.top = "0";
