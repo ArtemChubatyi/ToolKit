@@ -36,25 +36,28 @@ $(document).ready(function() {
     });
 
     // --------modal toast------
-    document.querySelector('.toast-examples > button').onclick = function() {
+    document.querySelector('.toast-examples > button').onclick = function () {
         let toast = document.querySelector('.toast-examples > .tk-toast');
         toast.classList.add('tk-toast_show');
-        setTimeout( function() {
+        setTimeout( function () {
             toast.classList.remove('tk-toast_show');
         }, 4000);
     }
 
     // --------modal dialog------
-    let modal = document.querySelector('.dialog-modal');
+    let modal = document.querySelector('[data-modal="dialog"]');
+    let btn = document.querySelector('[data-onclick="dialog"]');
     let overflow = document.createElement('div');
-    function openModal() {
-        overflow.className = "overflow";
+    overflow.className = "overflow";
+
+    btn.onclick = function () {
         document.body.appendChild(overflow);
         modal.style.display = "flex";
     }
 
     overflow.onclick = function () {
-        modal.style.display = "none"
+        overflow.remove();
+        modal.style.display = "none";
     }
 
     // --------Top bar------

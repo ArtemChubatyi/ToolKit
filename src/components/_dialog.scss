@@ -7,8 +7,9 @@
     width: 430px;
     top: calc(50% - 215px);
     left: calc(50% - 215px);
+    z-index: 1001;
 
-    display: flex;
+    display: none;
     flex-flow: column;
 
     &__title {
@@ -34,6 +35,7 @@
             border-radius: 10px;
             background-color: $secondary;
         }
+        
         &::-webkit-scrollbar{
             width: 6px;
             background-color: transparent;

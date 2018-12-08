@@ -7,16 +7,15 @@
             .tk-dialog__description
                 p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
                 p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-                p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-                p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
+                
             .tk-dialog__footer
                 button.tk-button.tk-button_narrow MORE INFO…
                 button.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
                 button.tk-button.tk-button_narrow.tk-button_colored ACCEPT
 
     // demo dialog modal
-    button(onclick="openModal();").tk-raised-button show dialog
-    .tk-dialog.dialog-modal
+    button.tk-raised-button(data-onclick="dialog") show dialog
+    .tk-dialog(data-modal="dialog")
         span.tk-dialog__title Dialog
         .tk-dialog__description
             p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
@@ -24,17 +23,6 @@
             p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
             p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
         .tk-dialog__footer
-            button#modal_close.tk-button.tk-button_narrow MORE INFO…
-            button#modal_close.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
-            button#modal_close.tk-button.tk-button_narrow.tk-button_colored ACCEPT
-
-    h3.usage-title Here`s the usage:
-    xmp(class="prettyprint lang-html")
-        | <!-- ancestor must be positioned statically or root element -->
-        | <div class="tk-toast">
-        |   <span class ="tk-toast__text">Your text</span>
-        |   <div class ="tk-toast__action-wrapper">
-        |   <!-- Your action element -->
-        |     <buttom>Your button</buttom>
-        |   </div>
-        | </div>
+            button.tk-button.tk-button_narrow MORE INFO…
+            button.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
+            button.tk-button.tk-button_narrow.tk-button_colored ACCEPT
