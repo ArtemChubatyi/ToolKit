@@ -35,17 +35,30 @@ $(document).ready(function () {
 		});
 	});
 
-	// --------Tabs------
-	$(".tk-tabs > .tk-tabs__item").on("click", function () {
-		if (!$(this).hasClass("active")) {
-			$(this)
-				.addClass("active").siblings().removeClass("active")
-		}
-	})
+	// --------modal toast------
+	document.querySelector('.toast-examples > button').onclick = function () {
+		let toast = document.querySelector('.toast-examples > .tk-toast');
+		toast.classList.add('tk-toast_show');
+		setTimeout(function () {
+			toast.classList.remove('tk-toast_show');
+		}, 4000);
+	}
 
-	$(".tk-tabs-title").on("click", function () {
-		$(this).next().slideToggle();
-	})
+	// --------modal dialog------
+	let modal = document.querySelector('[data-modal="dialog"]');
+	let btn = document.querySelector('[data-onclick="dialog"]');
+	let overflow = document.createElement('div');
+	overflow.className = "overflow";
+
+	btn.onclick = function () {
+		document.body.appendChild(overflow);
+		modal.style.display = "flex";
+	}
+
+	overflow.onclick = function () {
+		overflow.remove();
+		modal.style.display = "none";
+	}
 
 	// --------Top bar------
 	var prevScrollPos = window.pageYOffset;

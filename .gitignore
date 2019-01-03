@@ -2,6 +2,7 @@
 /dist/
 /.git/
 /src/css/
+/src/js/scripts.min.js
 /src/*.html
 /**/_backstage
 /**/package-lock.json
