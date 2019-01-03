@@ -1,21 +1,8 @@
 @import "vars";
 @import "fonts";
+@import "../scss/_mixins/mixin";
 @import "libs";
 @import "prettifier";
-@import "../scss/_mixins/mixin";
-@import "../components/dividers";
-@import "../components/buttons";
-@import "../components/cards";
-@import "../components/icon-buttons";
-@import "../components/floating-buttons";
-@import "../components/menu";
-@import "../components/menu-dropdown";
-@import "../libs/ripple/ripple";
-@import "../components/speed-dial";
-@import "../components/toolbars";
-@import "../components/tabs";
-
-
 
 
 ::placeholder {

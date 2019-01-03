@@ -21,7 +21,14 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
     "microlight": "0.0.7",
+    "prettier": "1.15.3",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-order": "^2.0.0",
     "vanilla-ripplejs": "^1.0.6"
   },
   "dependencies": {
