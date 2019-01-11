@@ -4,14 +4,20 @@
   "description": "OptimizedHTML 4 - Start HTML Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
   },
   "author": "WebDesign Master",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
@@ -25,13 +31,44 @@
     "lint-staged": "^8.1.0",
     "microlight": "0.0.7",
     "prettier": "1.15.3",
+    "pug": "^2.0.3",
+    "stylelint": "^9.9.0",
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^2.0.0",
+    "stylelint-scss": "^3.4.4",
     "vanilla-ripplejs": "^1.0.6"
   },
-  "dependencies": {
-    "pug": "^2.0.3"
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "eslintIgnore": [
+    "/src/libs/**/*.js",
+    "/docs/libs/**/*.js"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.html": [
+      "prettier --write",
+      "git add"
+    ],
+    "/src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "**/*.{scss}": [
+      "stylelint --fix",
+      "git add"
+    ]
   }
 }

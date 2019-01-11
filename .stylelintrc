@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-airbnb",
+    "stylelint-config-prettier",
+  ],
+  "ignoreFiles": "**/main.min.css"
+  ]
+}

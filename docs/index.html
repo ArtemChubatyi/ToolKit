@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header class="header" id="header" style="top: 0">
+      <a class="logo" href="javascript:void(0);"
+        ><img class="img-responsive" src="img/white-logo.png" alt="logo"
+      /></a>
+    </header>
+    <div class="second-header"></div>
+    <nav class="sidebar">
+      <div class="sidebar__logo">
+        <a class="logo" href="javascript:void(0);"
+          ><img class="img-responsive" src="img/dark-logo.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="sidebar-menu">
+        <li class="have-children">
+          <a class="sidebar-menu__item" href="javascript:void(0);"
+            ><span class="sidebar-menu__item-inner"></span> Buttons</a
+          >
+          <ul>
+            <li>
+              <a class="sidebar-menu__item" href="#flat-buttons"
+                >Flat Buttons</a
+              >
+            </li>
+            <li>
+              <a class="sidebar-menu__item" href="#raised-buttons"
+                >Raised Buttons</a
+              >
+            </li>
+            <li>
+              <a class="sidebar-menu__item" href="#icon-buttons"
+                >Icon Buttons</a
+              >
+            </li>
+            <li>
+              <a class="sidebar-menu__item" href="#floating-buttons"
+                >Floating Buttons</a
+              >
+            </li>
+            <li>
+              <a class="sidebar-menu__item" href="#speed-dial">Speed Dial</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="sidebar-menu__item" href="#box-shadows"
+            ><span class="sidebar-menu__item-inner"></span> Box-Shadows</a
+          >
+        </li>
+        <li>
+          <a class="sidebar-menu__item" href="#divider"
+            ><span class="sidebar-menu__item-inner"></span> Divider</a
+          >
+        </li>
+        <li class="have-children">
+          <a class="sidebar-menu__item" href="javascript:void(0);"
+            ><span class="sidebar-menu__item-inner"></span> Cards</a
+          >
+          <ul>
+            <li>
+              <a class="sidebar-menu__item" href="#simple-card">Simple Card</a>
+            </li>
+            <li>
+              <a class="sidebar-menu__item" href="#titled-card">Titiled Card</a>
+            </li>
+            <li>
+              <a class="sidebar-menu__item" href="#card-with-header"
+                >Card with Header</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="have-children">
+          <a class="sidebar-menu__item" href="javascript:void(0);"
+            ><span class="sidebar-menu__item-inner"></span> Menu Items</a
+          >
+          <ul>
+            <li><a class="sidebar-menu__item" href="#menu-item">Menu</a></li>
+            <li>
+              <a class="sidebar-menu__item" href="#menu-dropdown"
+                >Menu Dropdown</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="sidebar-menu__item" href="#tabs"
+            ><span class="sidebar-menu__item-inner"></span> Tabs</a
+          >
+        </li>
+        <li>
+          <a class="sidebar-menu__item" href="#toolbars"
+            ><span class="sidebar-menu__item-inner"></span> Toolbars</a
+          >
+        </li>
+        <li class="have-children">
+          <a class="sidebar-menu__item" href="javascript:void(0);"
+            ><span class="sidebar-menu__item-inner"></span> Modals</a
+          >
+          <ul>
+            <li><a class="sidebar-menu__item" href="#toast">Toasts</a></li>
+            <li><a class="sidebar-menu__item" href="#dialog">Dialog</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="sidebar-menu__item" href="#loaders"
+            ><span class="sidebar-menu__item-inner"></span> Loaders</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="content" id="content">
+      <a class="anchor" name="flat-buttons"></a>
+      <div class="buttons-examples">
+        <h2>Flat buttons</h2>
+        <button class="tk-button">Button</button
+        ><button class="tk-button tk-button_colored">Colored</button
+        ><button class="tk-button tk-button_disabled" disabled="disabled">
+          Disable
+        </button>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp
+          class="prettyprint lang-html">  <button class="tk-button">Button</button>
+  <button class="tk-button tk-button_colored">Colored</button>
+  <button class="tk-button tk-button_disabled" disabled="disabled">Disable</button></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="raised-buttons"></a>
+      <div class="buttons-examples">
+        <h2>Raised buttons</h2>
+        <button class="tk-raised-button">Button</button
+        ><button class="tk-raised-button tk-raised-button_colored">
+          Colored
+          <div class="rippleJS"></div></button
+        ><button
+          class="tk-raised-button tk-raised-button_disabled"
+          disabled="disabled"
+        >
+          Disable
+        </button>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp
+          class="prettyprint lang-html">  <button class="tk-raised-button">Button</button>
+  <button class="tk-raised-button tk-raised-button_colored">Colored</button>
+  <button class="tk-raised-button tk-raised-button_disabled" disabled="disabled">Disable</button></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="icon-buttons"></a>
+      <div class="icon-buttons-examples">
+        <h2>Icon Buttons</h2>
+        <div class="icon-buttons-wrap">
+          <p>icon buttons</p>
+          <button class="tk-icon-button"><i class="fas fa-bars"></i></button
+          ><button class="tk-icon-button">
+            <i class="fas fa-arrow-left"></i></button
+          ><button class="tk-icon-button">
+            <i class="fas fa-arrow-right"></i></button
+          ><button class="tk-icon-button"><i class="fas fa-check"></i></button
+          ><button class="tk-icon-button"><i class="fas fa-times"></i></button
+          ><button class="tk-icon-button"><i class="fas fa-expand"></i></button
+          ><button class="tk-icon-button">
+            <i class="fas fa-compress"></i></button
+          ><button class="tk-icon-button">
+            <i class="fas fa-ellipsis-v"></i></button
+          ><button class="tk-icon-button"><i class="fas fa-redo"></i></button>
+        </div>
+        <div class="icon-buttons-wrap">
+          <p>styled</p>
+          <button class="tk-icon-button black">
+            <i class="fas fa-heart"></i></button
+          ><button class="tk-icon-button rose">
+            <i class="fas fa-heart"></i></button
+          ><button class="tk-icon-button"><i class="fas fa-heart"></i></button>
+        </div>
+        <div class="icon-buttons-wrap">
+          <p>segmented</p>
+          <button class="tk-icon-button tk-icon-button_segmented">
+            <i class="fas fa-walking"></i></button
+          ><button class="tk-icon-button tk-icon-button_segmented">
+            <i class="fas fa-bicycle"></i></button
+          ><button class="tk-icon-button tk-icon-button_segmented">
+            <i class="fas fa-bus-alt"></i></button
+          ><button class="tk-icon-button tk-icon-button_segmented">
+            <i class="fas fa-car"></i>
+          </button>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <!-- Icon Buttons -->
+  <button class="tk-icon-button"> <i class="fas fa-bars"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-arrow-left"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-arrow-right"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-check"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-times"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-expand"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-compress"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-ellipsis-v"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-redo"></i></button>
+
+  <!-- Styled -->
+  <button class="tk-icon-button black"><i class="fas fa-heart"></i></button>
+  <button class="tk-icon-button rose"> <i class="fas fa-heart"></i></button>
+  <button class="tk-icon-button"> <i class="fas fa-heart"></i></button>
+  
+  <!-- Segmented -->
+  <button class="tk-icon-button tk-icon-button_segmented"><i class="fas fa-walking"></i></button>
+  <button class="tk-icon-button tk-icon-button_segmented"><i class="fas fa-bicycle"></i></button>
+  <button class="tk-icon-button tk-icon-button_segmented"><i class="fas fa-bus-alt"></i></button>
+  <button class="tk-icon-button tk-icon-button_segmented"><i class="fas fa-car"></i></button></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="floating-buttons"></a>
+      <div class="floating-buttons-examples">
+        <h2>Floating Action Button</h2>
+        <div class="floating-buttons-wrap">
+          <p>Regular</p>
+          <button class="tk-floating-button bg-rose">
+            <i class="fas fa-bars"></i></button
+          ><button class="tk-floating-button bg-blue">
+            <i class="fas fa-arrow-left"></i></button
+          ><button class="tk-floating-button">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="floating-buttons-wrap">
+          <p>Mini</p>
+          <button class="tk-floating-button tk-floating-button_mini bg-green">
+            <i class="fas fa-bars"></i></button
+          ><button class="tk-floating-button tk-floating-button_mini bg-violet">
+            <i class="fas fa-arrow-left"></i></button
+          ><button class="tk-floating-button tk-floating-button_mini">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <!-- Regular Buttons -->
+  <button class="tk-floating-button bg-rose"><i class="fas fa-bars"></i></button>
+  <button class="tk-floating-button bg-blue"><i class="fas fa-arrow-left"></i></button>
+  <button class="tk-floating-button"> <i class="fas fa-arrow-right"></i></button>
+
+  <!-- Mini Buttons -->
+  <button class="tk-floating-button tk-floating-button_mini bg-green"><i class="fas fa-bars"></i></button>
+  <button class="tk-floating-button tk-floating-button_mini bg-violet"> <i class="fas fa-arrow-left"></i></button>
+  <button class="tk-floating-button tk-floating-button_mini"><i class="fas fa-arrow-right"></i></button></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="speed-dial"></a>
+      <div class="speed-dial-examples">
+        <h2>Speed Dial Button</h2>
+        <div class="tk-speed-dial">
+          <button class="tk-speed-dial__button tk-floating-button">
+            <i class="fas fa-bars"></i>
+            <div class="rippleJS"></div>
+          </button>
+          <ul style="display: none;">
+            <li>
+              <button
+                class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </li>
+            <li>
+              <button
+                class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"
+              >
+                <i class="fas fa-heart"></i>
+              </button>
+            </li>
+            <li>
+              <button
+                class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"
+              >
+                <i class="fas fa-pen"> </i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <div class="tk-speed-dial">
+      <button class="tk-speed-dial__button tk-floating-button"><i class="fas fa-bars"></i></button>
+      <ul style="display: none;">
+          <li><button class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"><i class="fas fa-times"></i></button></li>
+          <li><button class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"><i class="fas fa-heart"></i></button></li>
+          <li><button class="tk-floating-button tk-floating-button_mini tk-speed-dial__item"><i class="fas fa-pen"></i></button></li>
+      </ul>
+  </div></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="box-shadows"></a>
+      <div class="shadow-examples">
+        <h3>Shadow</h3>
+        <div class="box-shadow-box box-shadow-box_1"></div>
+        <div class="box-shadow-box box-shadow-box_2"></div>
+        <div class="box-shadow-box box-shadow-box_3"></div>
+        <div class="box-shadow-box box-shadow-box_4"></div>
+        <div class="box-shadow-box box-shadow-box_5"></div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp
+          class="prettyprint lang-html">  <!-- The number determines the depth of the shadow.-->
+  <div class="box-shadow-box box-shadow-box_1"></div>
+  <div class="box-shadow-box box-shadow-box_2"></div>
+  <div class="box-shadow-box box-shadow-box_3"></div>
+  <div class="box-shadow-box box-shadow-box_3"></div>
+  <div class="box-shadow-box box-shadow-box_3"></div></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="divider"></a>
+      <div class="divider-examples">
+        <h2>Divider</h2>
+        <div class="wrapper tk-menu">
+          <li class="tk-menu__item">
+            <div class="tk-item__content">
+              <div class="tk-icon-box"><i class="far fa-comments"></i></div>
+              <p class="tk-menu__item-title">Forums</p>
+              <div class="tk-info-box_pulled">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+          </li>
+          <div class="tk-divider"></div>
+          <li class="tk-menu__item">
+            <div class="tk-item__content">
+              <div class="tk-icon-box"><i class="far fa-flag"> </i></div>
+              <p class="tk-menu__item-title">Updates</p>
+              <div class="tk-info-box_pulled">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+          </li>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp
+          class="prettyprint lang-html">  <button class="tk-button">Button</button>
+  <div class="tk-divider"></div>
+  <button class="tk-button">Disable</button></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <div class="card-examples">
+        <a class="anchor" name="simple-card"></a>
+        <h2>Simple Card</h2>
+        <div class="tk-card">
+          <p class="tk-card__description">
+            Cards are a convenient means of displaying content composed of
+            different types of objects.
+          </p>
+          <div class="tk-card__footer">
+            <button class="tk-button tk-button_narrow">MORE INFO…</button>
+          </div>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <div class="tk-card">
+      <p class="tk-card__description">
+          Cards are a convenient means of displaying content composed of different types of objects.
+      </p>
+      <div class="tk-card__footer">
+          <button class="tk-button tk-button_narrow">MORE INFO…</button>
+      </div>
+  </div></xmp>
+        <div class="tk-divider"></div>
+        <a class="anchor" name="titled-card"></a>
+        <h2>Titled Card</h2>
+        <div class="tk-card">
+          <span class="tk-card__title">Card headline title</span>
+          <p class="tk-card__description">
+            Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius
+            rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis,
+            has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci
+            perpetua.
+          </p>
+          <hr class="tk-card__divider" />
+          <div class="tk-card__footer">
+            <button class="tk-button tk-button_narrow">MORE INFO…</button
+            ><button class="tk-card__button_pulled tk-button tk-button_narrow">
+              DECLINE</button
+            ><button class="tk-button tk-button_narrow tk-button_colored">
+              ACCEPT
+            </button>
+          </div>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <div class="tk-card">
+       <span class="tk-card__title">Card headline title</span>
+      <p class="tk-card__description">Lorem ...</p>
+      <hr class="tk-card__divider">
+      <div class="tk-card__footer">
+          <button class="tk-button tk-button_narrow">MORE INFO…</button>
+          <button class="tk-card__button_pulled tk-button tk-button_narrow">DECLINE</button>
+          <button class="tk-button tk-button_narrow tk-button_colored">ACCEPT</button>
+      </div>
+  </div></xmp>
+        <div class="tk-divider"></div>
+        <a class="anchor" name="card-with-header"></a>
+        <h2>Card with header</h2>
+        <div class="tk-card">
+          <div class="tk-card__header">
+            <img
+              class="tk-card__image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAO86OQOBZXnCjEVnSwz9sZLJ76rSCgjqzlNDR2IJg0fpgGut"
+              alt="Akatsuki"
+            /><span class="tk-card__title tk-card__title_light"
+              >Card with image header</span
+            >
+          </div>
+          <p class="tk-card__description">
+            Lorem ... ipsum dolor sit amet, doming noster at quo, nostrud
+            lucilius rationibus ea duo. Vim no mucius dolores. No bonorum
+            voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim
+            id, et quo graeci perpetua.
+          </p>
+          <hr class="tk-card__divider" />
+          <div class="tk-card__footer">
+            <button class="tk-button tk-button_narrow">MORE INFO…</button
+            ><button class="tk-card__button_pulled tk-button tk-button_narrow">
+              DECLINE</button
+            ><button class="tk-button tk-button_narrow tk-button_colored">
+              ACCEPT
+            </button>
+          </div>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <div class="tk-card">
+       <div class="tk-card__header">
+          <img class="tk-card__image" src="..." alt="...">
+           <span class="tk-card__title tk-card__title_light">
+              Card with image header
+           </span>
+       </div>
+       <p class="tk-card__description">Lorem ...</p>
+       <hr class="tk-card__divider">
+       <div class="tk-card__footer">
+           <button class="tk-button tk-button_narrow">MORE INFO…</button>
+           <button class="tk-card__button_pulled tk-button tk-button_narrow">DECLINE</button>
+           <button class="tk-button tk-button_narrow tk-button_colored">ACCEPT</button>
+       </div>
+   </div></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="menu-item"></a>
+      <div class="menu-examples">
+        <h2>Menus &amp; Menu Items</h2>
+        <div class="menu-wrap">
+          <p>Menu</p>
+          <nav class="tk-menu">
+            <ul class="tk-menu__list">
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="far fa-clock"></i></div>
+                  <p class="tk-menu__item-title">Recent Articles</p>
+                </div>
+              </li>
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="fas fa-archive"></i></div>
+                  <p class="tk-menu__item-title">Arcives</p>
+                </div>
+              </li>
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="fas fa-check"> </i></div>
+                  <p class="tk-menu__item-title">Completed</p>
+                </div>
+              </li>
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box">
+                    <i class="fab fa-telegram-plane"> </i>
+                  </div>
+                  <p class="tk-menu__item-title">Send</p>
+                  <div class="tk-info-box_pulled">
+                    <i class="fas fa-info-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="fas fa-trash"> </i></div>
+                  <p class="tk-menu__item-title">Trash</p>
+                  <div class="tk-info-box_pulled">
+                    <i class="fas fa-info-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="far fa-star"> </i></div>
+                  <p class="tk-menu__item-title">Starred</p>
+                  <div class="tk-info-box_pulled">
+                    <i class="fas fa-info-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box">
+                    <i class="far fa-comments"> </i>
+                  </div>
+                  <p class="tk-menu__item-title">Forums</p>
+                  <div class="tk-info-box_pulled">
+                    <i class="fas fa-info-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="tk-menu__item">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="far fa-flag"> </i></div>
+                  <p class="tk-menu__item-title">Updates</p>
+                  <div class="tk-info-box_pulled">
+                    <i class="fas fa-info-circle"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <nav class="tk-menu">
+      <ul class="tk-menu__list">
+          <li class="tk-menu__item">
+               <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="far fa-clock"></i></div>
+                  <p class="tk-menu__item-title">Recent Articles</p>
+               </div>
+           </li>
+          <!-- ........... -->
+          <li class="tk-menu__item">
+              <div class="tk-item__content">
+                 <div class="tk-icon-box"> <i class="far fa-flag"> </i></div>
+                 <p class="tk-menu__item-title">Updates</p>
+                 <div class="tk-info-box_pulled"><i class="fas fa-info-circle"></i></div>
+              </div>
+          </li>
+      </ul>
+  </nav></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="menu-dropdown"></a>
+      <div class="menu-dropdown-examples">
+        <h2>Menu whith dropdown</h2>
+        <div class="menu-wrap">
+          <p>Menu</p>
+          <nav class="tk-menu">
+            <ul class="tk-menu__list">
+              <li class="tk-menu__item have-children">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="far fa-clock"></i></div>
+                  <p class="tk-item__title">Recent Articles</p>
+                </div>
+                <ul class="tk-menu__inner" style="display: none">
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="tk-menu__item have-children">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="fas fa-archive"></i></div>
+                  <p class="tk-menu__item-title">Arcives</p>
+                </div>
+                <ul class="tk-menu__inner" style="display: none">
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="tk-menu__item have-children">
+                <div class="tk-item__content">
+                  <div class="tk-icon-box"><i class="fas fa-check"> </i></div>
+                  <p class="tk-menu__item-title">Completed</p>
+                </div>
+                <ul class="tk-menu__inner" style="display: none">
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                  <li class="tk-menu__inner-item">
+                    <div class="tk-item__content">
+                      <p class="tk-menu__item-title">Content</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <nav class="tk-menu">
+       <ul class="tk-menu__list">
+           <li class="tk-menu__item have-children">
+               <div class="tk-item__content">
+                   <div class="tk-icon-box">
+                       <i class="far fa-clock"></i>
+                   </div>
+                   <p class="tk-item__title">Recent Articles</p>
+               </div>
+               <ul class="tk-menu__inner" style="display: none">
+                   <li class="tk-menu__inner-item">
+                       <div class="tk-item__content">
+                           <p class="tk-menu__item-title">Content</p>
+                       </div>
+                   </li>
+                   <li class="tk-menu__inner-item">
+                       <div class="tk-item__content">
+                           <p class="tk-menu__item-title">Content</p>
+                       </div>
+                   </li>
+                   <li class="tk-menu__inner-item">
+                      <div class="tk-item__content">
+                          <p class="tk-menu__item-title">Content</p>
+                      </div>
+                  </li>
+              </ul>
+          </li>
+      <!-- ........... -->
+      </ul>
+   </nav></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <div class="toolbars-examples">
+        <a class="anchor" name="toolbars"></a>
+        <h2>Toolbars</h2>
+        <div class="tk-toolbar tk-toolbar_color_1">
+          <button class="tk-toolbar__item tk-icon-button white">
+            <i class="fas fa-bars"></i></button
+          ><span class="tk-toolbar__label white">Toolbar</span
+          ><button class="tk-toolbar__item tk-icon-button white">
+            <i class="fas fa-redo"></i></button
+          ><button class="tk-toolbar__item tk-icon-button white">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
+        <div class="tk-toolbar tk-toolbar_color_2 tk-toolbar_tall">
+          <button
+            class="tk-toolbar__item tk-toolbar__item_top tk-icon-button white"
+          >
+            <i class="fas fa-bars"></i></button
+          ><span class="tk-toolbar__label tk-toolbar__item_top white"
+            >Toolbar: tall</span
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_top tk-icon-button white"
+          >
+            <i class="fas fa-redo"></i></button
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_top tk-icon-button white"
+          >
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
+        <div class="tk-toolbar tk-toolbar_color_3 tk-toolbar_tall">
+          <button
+            class="tk-toolbar__item tk-toolbar__item_bottom tk-icon-button white"
+          >
+            <i class="fas fa-bars"></i></button
+          ><span class="tk-toolbar__label tk-toolbar__item_bottom white"
+            >Toolbar: tall with items aligned to the bottom</span
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_bottom tk-icon-button white"
+          >
+            <i class="fas fa-redo"></i></button
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_bottom tk-icon-button white"
+          >
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
+        <div class="tk-toolbar tk-toolbar_color_4 tk-toolbar_medium">
+          <button
+            class="tk-toolbar__item tk-toolbar__item_top tk-icon-button white"
+          >
+            <i class="fas fa-bars"></i></button
+          ><span class="tk-toolbar__label tk-toolbar__item_bottom white"
+            >Toolbar: medium-tall with labels aligned to the bottom</span
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_top tk-icon-button white"
+          >
+            <i class="fas fa-redo"></i></button
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_top tk-icon-button white"
+          >
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
+        <div class="tk-toolbar tk-toolbar_color_5 tk-toolbar_tall">
+          <button
+            class="tk-toolbar__item tk-toolbar__item_bottom tk-icon-button white"
+          >
+            <i class="fas fa-bars"></i></button
+          ><span class="tk-toolbar__label white"
+            >Toolbar: tall with labels aligned to the middle items aligned to
+            the bottom</span
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_bottom tk-icon-button white"
+          >
+            <i class="fas fa-redo"></i></button
+          ><button
+            class="tk-toolbar__item tk-toolbar__item_bottom tk-icon-button white"
+          >
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp
+          class="prettyprint lang-html"><!-- Toolbar: tall with items aligned to the top -->
+<div class="tk-toolbar tk-toolbar_color tk-toolbar_tall">
+  <div class ="tk-toolbar__item tk-toolbar__item_top button"></div>
+  <div class ="tk-toolbar__item tk-toolbar__item_top label"></div>
+  <div class ="tk-toolbar__item tk-toolbar__item_top button"></div>
+  <div class ="tk-toolbar__item tk-toolbar__item_top button"></div>
+</div></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <div class="toast-examples">
+        <a class="anchor" name="toast"></a>
+        <h2>Toast</h2>
+        <div class="wrapper">
+          <div class="tk-toast">
+            <span class="tk-toast__text">Your draft has been discarded.</span>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="tk-toast">
+            <span class="tk-toast__text"
+              >Connection timed out. Showing limited messages.</span
+            >
+            <div class="tk-toast__action-wrapper">
+              <button class="tk-button tk-toast__button lemon">retry</button>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="tk-toast tk-toast_rounded">
+            <span class="tk-toast__text">Message sent</span>
+          </div>
+        </div>
+        <!-- demo toast modal--><button class="tk-raised-button">
+          show toast
+        </button>
+        <div class="tk-toast">
+          <span class="tk-toast__text">Showing toast messages.</span>
+          <div class="tk-toast__action-wrapper">
+            <button class="tk-button tk-toast__button lemon">retry</button>
+          </div>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp
+          class="prettyprint lang-html"><!-- ancestor must be positioned statically or root element -->
+<div class="tk-toast">
+  <span class ="tk-toast__text">Your text</span>
+  <div class ="tk-toast__action-wrapper">
+  <!-- Your action element -->
+    <button>Your button</button>
+  </div>
+</div></xmp>
+      </div>
+      <div class="tk-divider"></div>
+      <div class="dialog-examples">
+        <a class="anchor" name="dialog"></a>
+        <h2>Dialog</h2>
+        <div class="wrapper">
+          <div class="tk-dialog">
+            <span class="tk-dialog__title">Dialog</span>
+            <div class="tk-dialog__description">
+              <p>
+                Lorem ipsum dolor sit amet, doming noster at quo, nostrud
+                lucilius rationibus ea duo. Vim no mucius dolores. No bonorum
+                voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus
+                vim id, et quo graeci perpetua.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, doming noster at quo, nostrud
+                lucilius rationibus ea duo. Vim no mucius dolores. No bonorum
+                voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus
+                vim id, et quo graeci perpetua.
+              </p>
+            </div>
+            <div class="tk-dialog__footer">
+              <button class="tk-button tk-button_narrow">MORE INFO…</button
+              ><button
+                class="tk-card__button_pulled tk-button tk-button_narrow"
+              >
+                DECLINE</button
+              ><button class="tk-button tk-button_narrow tk-button_colored">
+                ACCEPT
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- demo dialog modal--><button
+          class="tk-raised-button"
+          data-onclick="dialog"
+        >
+          show dialog
+        </button>
+        <div class="tk-dialog" data-modal="dialog">
+          <span class="tk-dialog__title">Dialog</span>
+          <div class="tk-dialog__description">
+            <p>
+              Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius
+              rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum
+              vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo
+              graeci perpetua.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius
+              rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum
+              vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo
+              graeci perpetua.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius
+              rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum
+              vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo
+              graeci perpetua.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius
+              rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum
+              vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo
+              graeci perpetua.
+            </p>
+          </div>
+          <div class="tk-dialog__footer">
+            <button class="tk-button tk-button_narrow">MORE INFO…</button
+            ><button class="tk-card__button_pulled tk-button tk-button_narrow">
+              DECLINE</button
+            ><button class="tk-button tk-button_narrow tk-button_colored">
+              ACCEPT
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="tk-divider"></div>
+      <a class="anchor" name="loaders"></a>
+      <div class="menu-dropdown-examples">
+        <h2>Loaders</h2>
+        <div class="loaders-wrap">
+          <p>Linear</p>
+          <div class="tk-progress-linear__items">
+            <div class="tk-linear"></div>
+            <div class="tk-linear"></div>
+            <div class="tk-linear"></div>
+            <div class="tk-linear"></div>
+            <div class="tk-linear tk-linear_pink"></div>
+            <div class="tk-linear tk-linear_pink"></div>
+          </div>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp class="prettyprint lang-html">  <div class="tk-linear"></div>
+  <div class="tk-linear tk-linear_pink"></div></xmp>
+        <div class="tk-divider"></div>
+        <div class="loaders-wrap">
+          <p>Circular</p>
+          <div class="tk-progress-circular__items">
+            <div class="tk-circular_very-small"></div>
+            <div class="tk-circular_small"></div>
+            <div class="tk-circular_medium"></div>
+            <div class="tk-circular_large"></div>
+            <div class="tk-circular_extra-large"></div>
+          </div>
+        </div>
+        <h3 class="usage-title">Here`s the usage:</h3>
+        <xmp
+          class="prettyprint lang-html">  <div class="tk-circular_very-small"></div>
+  <div class="tk-circular_small"></div>    
+  <div class="tk-circular_medium"></div>
+  <div class="tk-circular_large"></div>
+  <div class="tk-circular_extra-large"></div></xmp>
+      </div>
+      <div class="tk-divider"></div>
+    </main>
+  </body>
+  <script src="js/scripts.js"></script>
+</html>
