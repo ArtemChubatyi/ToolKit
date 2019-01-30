@@ -1,4 +1,4 @@
-$(document).ready(function () {
+;$(document).ready(function () {
 	// ------Sidebar-------
 	$(".sidebar-menu > li.have-children a").on("click", function () {
 		if (!$(this).parent().hasClass("active")) {
@@ -61,15 +61,25 @@ $(document).ready(function () {
 	}
 
 	// --------Top bar------
-	var prevScrollPos = window.pageYOffset;
-	window.onscroll = function () {
-		var curentScrollPos = window.pageYOffset;
-		if (prevScrollPos > curentScrollPos) {
-			document.getElementById('header').style.top = "0";
-		} else {
-			document.getElementById('header').style.top = "-80px";
+	// var prevScrollPos = window.pageYOffset;
+	// window.onscroll = function () {
+	// 	var curentScrollPos = window.pageYOffset;
+	// 	if (prevScrollPos > curentScrollPos) {
+	// 		document.getElementById('header').style.top = "0";
+	// 	} else {
+	// 		document.getElementById('header').style.top = "-80px";
+	// 	}
+	// 	prevScrollPos = curentScrollPos;
+	// }
+	var timer = false;
+	window.onscroll = function() {
+		document.getElementById('header').style.top = "-80px";
+		if (timer) {
+			clearTimeout(timer);
 		}
-		prevScrollPos = curentScrollPos;
+		timer = setTimeout(function () {
+			document.getElementById('header').style.top = "0";
+		}, 1000);
 	}
 
 });

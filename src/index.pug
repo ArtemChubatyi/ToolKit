@@ -5,7 +5,6 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
-        script(src="libs/jquery/dist/jquery.min.js")
         script(src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
         link(rel="stylesheet", href="css/main.min.css")
@@ -13,27 +12,30 @@ html(lang="en")
         header.header#header(style="top: 0")
           a.logo(href="javascript:void(0);")
             img(src="img/white-logo.png", alt="logo" class="img-responsive")
+          a.logo(href="https://github.com/ArtemChubatyi/ToolKit")
+            img(src="img/github-logo.svg", alt="GitHub logo" class="img-responsive")
+            span Documentation
         .second-header
         include components/sidebar
         main.content#content
-          a(name="flat-buttons" class="anchor")
+          a.anchor(name="flat-buttons")
           include examples/buttons/buttons
           .tk-divider
-          a(name="raised-buttons" class="anchor")
+          a.anchor(name="raised-buttons")
           include examples/buttons/raised-buttons
           .tk-divider
-          a(name="icon-buttons" class="anchor")
+          a.anchor(name="icon-buttons")
           include examples/buttons/icon-buttons
           .tk-divider
-          a(name="floating-buttons" class="anchor")
+          a.anchor(name="floating-buttons")
           include examples/buttons/floating-buttons
           .tk-divider
           include examples/buttons/speed-dial
           .tk-divider
-          a(name="box-shadows" class="anchor")
+          a.anchor(name="box-shadows")
           include examples/box-shadows/box-shadows
           .tk-divider
-          a(name="divider" class="anchor")
+          a.anchor(name="divider")
           include examples/divider/divider
           .tk-divider
           include examples/cards/cards

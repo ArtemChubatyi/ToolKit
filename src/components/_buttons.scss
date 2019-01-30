@@ -13,7 +13,7 @@ $flat-active-color: rgba(0,0,0, 0.1);
   border-radius: 3px;
 
   @include common-styles();
-  @include with-ripple($flat-hover-color, $flat-active-color);
+  // @include with-ripple($flat-hover-color, $flat-active-color);
 
   &_colored {
     color: $color-2;
@@ -41,7 +41,7 @@ $flat-active-color: rgba(0,0,0, 0.1);
   @include box-shadow(1);
 
   @include common-styles();
-  @include with-ripple($flat-hover-color, $flat-active-color);
+  // @include with-ripple($flat-hover-color, $flat-active-color);
 
   &_colored {
     background-color: #4285f4;

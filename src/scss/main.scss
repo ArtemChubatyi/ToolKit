@@ -1,15 +1,13 @@
 @import "vars";
 @import "fonts";
-@import "../scss/_mixins/mixin";
+@import "_mixins/mixin";
 @import "libs";
-@import "prettifier";
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 
 p {
     margin: .5em 0;
@@ -27,8 +25,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    padding: 0;
     font-size: 16px;
     min-width: 320px;
     position: relative;
@@ -48,32 +44,50 @@ body {
     }
 }
 
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    &.img-width {
-        width: 100%;
-    }
+b, strong {
+    font-weight: bold;
 }
 
 .text-center {
     text-align: center;
 }
 
-b, strong {
-    font-weight: bold;
-}
-
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: $primary;
     position: fixed;
     width: 100%;
-    height: 72px;
+    height: 76px;
     z-index: 10;
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
     transition: linear .3s;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 230px;
+    padding: 10px;
+    margin-left: 20px;
+
+    text-decoration: none;
+    color: $secondary;
+    font-size: 18px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    &.img-width {
+        width: 100%;
+    }
+}
+
 .sidebar {
     width: 280px;
     background-color: $background;
@@ -92,17 +106,19 @@ b, strong {
         width: 6px;
         background-color: $background;
     }
+
+    &__logo {
+        height: 76px;
+    }
 }
 .sidebar-menu {
-    margin: 0;
-    padding: 0;
     max-width: 280px;
     list-style: none;
     list-style-type: none;
     margin-top: 8px;
     &__item {
         background-color: $background;
-        padding: 20px 25px;
+        padding: 10px 25px;
         display: block;
         text-decoration: none;
         color: $primary;
@@ -111,7 +127,6 @@ b, strong {
         
         &:hover {
             z-index: 9;
-            padding: 20px 25px;
             background-color: $secondary;
             // box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
@@ -146,10 +161,7 @@ b, strong {
   transition: all .5s;
 }
 
-.active.have-children span::after {
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
+.have-children.active span::after {
     transform: rotate(90deg);
 }
 
@@ -158,14 +170,13 @@ b, strong {
 }
 
 .content {
-    box-sizing: border-box;
     background-color: $background;
     height: auto;
     float: right;
     width: calc(100% - 280px);
     overflow-y: scroll;
     padding: {
-        top: 100px;
+        top: 20px;
         left: 10%;
         right: 10%;
     }
@@ -184,14 +195,6 @@ b, strong {
         width: 6px;
         background-color: $background;
     }
-}
-
-.logo {
-    display: block;
-    height: 100%;
-    width: 230px;
-    padding-top: 5px;
-    margin-left: 20px;
 }
 
 .box-shadow-box {
@@ -232,27 +235,21 @@ b, strong {
 .white {
     color: white;
 }
-
 .rose {
     color: #e91e63;
 }
-
 .lemon {
     color: #eeff41;
 }
-
 .bg-rose {
     background: #e91e63;
 }
-
 .bg-blue {
     background: #03a9f4;
 }
-
 .bg-green {
     background: #259b24;
 }
-
 .bg-violet {
     background: #673ab7;
 }

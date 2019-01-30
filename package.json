@@ -4,16 +4,21 @@
   "description": "OptimizedHTML 4 - Start HTML Template",
   "main": "index.js",
   "scripts": {
+    "build": "npx gulp cleanDist && npx gulp build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "WebDesign Master",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-notify": "^3.2.0",
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0",
@@ -23,15 +28,10 @@
     "gulp-util": "^3.0.8",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
-    "microlight": "0.0.7",
     "prettier": "1.15.3",
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
-    "stylelint-order": "^2.0.0",
-    "vanilla-ripplejs": "^1.0.6"
-  },
-  "dependencies": {
-    "pug": "^2.0.3"
+    "stylelint-order": "^2.0.0"
   }
 }

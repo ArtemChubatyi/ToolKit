@@ -1,3 +1,5 @@
+@import "../libs/ripple/ripple";
+@import "_code-prettify/prettifier";
 @import "../components/dividers";
 @import "../components/buttons";
 @import "../components/cards";
@@ -5,7 +7,6 @@
 @import "../components/floating-buttons";
 @import "../components/menu";
 @import "../components/menu-dropdown";
-@import "../libs/ripple/ripple";
 @import "../components/speed-dial";
 @import "../components/toolbars";
 @import "../components/tabs";
