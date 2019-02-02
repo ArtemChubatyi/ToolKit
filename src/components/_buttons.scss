@@ -2,6 +2,7 @@ $flat-hover-color: rgba(0,0,0, 0.04);
 $flat-active-color: rgba(0,0,0, 0.1);
 
 .tk-button {
+  position: relative;
   color: $color-1;
   padding: 9px 49px 7px;
   font-size: 16px;
@@ -27,8 +28,14 @@ $flat-active-color: rgba(0,0,0, 0.1);
     color: #a8a8a8;
     background-color: #eaeaea;
   }
+
+  &:not(&_disabled):hover {
+    background-color: $flat-hover-color;
+  }
 }
+
 .tk-raised-button {
+  position: relative;
   color: $color-1;
   padding: 9px 49px 7px;
   font-size: 16px;

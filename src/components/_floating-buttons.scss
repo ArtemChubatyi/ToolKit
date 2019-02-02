@@ -1,4 +1,5 @@
 .tk-floating-button {
+    position: relative;
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -10,7 +11,8 @@
     cursor: pointer;
     color: white;
     transition: .5s;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    @include box-shadow(1);
+
     &_rose {
         background: #e91e63;
     }
@@ -18,7 +20,7 @@
         background: #03a9f4;
     }
     &:hover {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    @include box-shadow(2);
     }
     &_mini {
         width: 40px;
