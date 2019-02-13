@@ -1,9 +1,15 @@
 .tooltips-example
-    .tk-floating-button
-        i.fas.fa-bars
-    .tk-floating-button.bg-rose
-        i.fas.fa-arrow-left
-    .tk-floating-button.bg-blue
-        i.fas.fa-arrow-right
-    .tk-floating-button.bg-green
-        i.fas.fa-heart
+  h2 Tooltips
+  p When hovered, Tooltips display a text label description an element
+  button.tk-floating-button.tooltips-example__button
+      i.fas.fa-bars
+      .tk-tooltips.tk-tooltips_top(data-tooltip="Test text")
+  button.tk-floating-button.bg-rose.tooltips-example__button
+      i.fas.fa-arrow-left
+      .tk-tooltips.tk-tooltips_right(data-tooltip="Test text")
+  button.tk-floating-button.bg-blue.tooltips-example__button
+      i.fas.fa-arrow-right
+      .tk-tooltips.tk-tooltips_bottom(data-tooltip="Test text")
+  button.tk-floating-button.bg-green.tooltips-example__button
+      i.fas.fa-heart
+      .tk-tooltips.tk-tooltips_left(data-tooltip="Test text")

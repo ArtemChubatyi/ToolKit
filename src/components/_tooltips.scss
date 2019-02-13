@@ -1,0 +1,64 @@
+$height: 22px;
+
+%tooltips {
+  position: absolute;
+
+  padding: 0 10px;
+  height: $height;
+  border-radius: 2px;
+  
+  content: attr(data-tooltip);
+
+  font-family: $default-font;
+  font-size: 10px;
+  line-height: $height;
+  text-align: center;
+  color: $tooltips-color;
+  background-color: $tooltips-bg;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.tk-tooltips {
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity .3s;
+
+  &:hover{
+     opacity: 1;
+  }
+
+  &_top::before {
+    @extend %tooltips;
+    transform: translate(-50%, -100%);
+    top: -($height / 2);
+    left: 50%;
+  }
+
+  &_right::before {
+    @extend %tooltips;
+    transform: translate(100%, -50%);
+    top: 50%;
+    right: -($height / 2);
+  }
+
+  &_bottom::before {
+    @extend %tooltips;
+    transform: translate(-50%, 100%);
+    bottom: -($height / 2);
+    left: 50%;
+  }
+
+  &_left::before {
+    @extend %tooltips;
+    transform: translate(-100%, -50%);
+    top: 50%;
+    left: -($height / 2);;
+  }
+}
+

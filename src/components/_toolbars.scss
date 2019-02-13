@@ -9,6 +9,14 @@ $map-color: (1: #607d8b, 2: #009688, 3: #673ab7, 4: #03a9f4, 5:#e91e63);
     width: 100%;
     height: 64px;
 
+    &_tall {
+        height: 192px;
+    }
+
+    &_medium {
+        height: 128px;
+    }
+
     &__item {
         flex: 0 1 auto;
         margin: 15px;
@@ -31,19 +39,9 @@ $map-color: (1: #607d8b, 2: #009688, 3: #673ab7, 4: #03a9f4, 5:#e91e63);
         line-height: 40px;
     }
 
-    &_tall {
-        height: 192px;
-    }
-
-    &_medium {
-        height: 128px;
-    }
-
     @each $col, $hex in $map-color {
         &_color_#{$col} {
             background-color: $hex;
         }
     }
-
-
 }
