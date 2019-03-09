@@ -1,13 +1,12 @@
 ;$(document).ready(function () {
 	// ------Sidebar-------
-	$(".sidebar-menu > li.have-children a").on("click", function () {
+	$(".sidebar-menu .have-children > a").on("click", function () {
 		if (!$(this).parent().hasClass("active")) {
 			$(".sidebar-menu li ul").slideUp();
 			$(this).next().slideToggle();
 			$(".sidebar-menu li").removeClass("active");
 			$(this).parent().addClass("active");
-		}
-		else {
+		} else {
 			$(this).next().slideToggle();
 			$(".sidebar-menu li").removeClass("active");
 		}
