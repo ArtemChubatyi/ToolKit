@@ -12,6 +12,10 @@
     display: none;
     flex-flow: column;
 
+    &_show {
+        display: flex !important;
+    }
+
     &__title {
         margin: 20px 25px;
         font-family: $bold-font;
@@ -47,5 +51,4 @@
         display: flex;
         margin: 10px 24px;
     }
-
 }

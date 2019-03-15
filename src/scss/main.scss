@@ -32,6 +32,7 @@ body {
     font-family: $default-font;
     overflow-x: hidden;
     color: $text;
+    
     input, textarea {
         border: #666 1px solid;
         outline: none;
@@ -381,12 +382,28 @@ b, strong {
 }
 
 .dialog-examples {
-    .wrapper {
+    .tk-dialog {
+        position: static;
+        margin: 20px;
+        display: flex;
+    }
+
+    .dialog-demo {
+        position: relative;
+
         .tk-dialog {
-            position: static;
-            margin: 20px 0;
-            display: flex;
+            position: fixed;
+            display: none;
         }
+    }
+
+    .overflow {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(25, 25, 25, .8);
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 }
 
@@ -395,15 +412,6 @@ b, strong {
         margin: 50px;
     }
     
-}
-
-.overflow {
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, .8);
-    position: fixed;
-    top: 0;
 }
 
 .usage-title {

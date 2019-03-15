@@ -1,27 +1,32 @@
+
+h2 Dialog
+p Dialogs inform users about a task and can contain 
+    | critical information, require decisions, or 
+    | involve multiple tasks.
 .dialog-examples
-    h2 Dialog
-    .wrapper
+    .tk-dialog
+        span.tk-dialog__title Dialog
+        .tk-dialog__description
+            p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
+            p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
+            
+        .tk-dialog__footer
+            button.tk-button.tk-button_narrow MORE INFO…
+            button.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
+            button.tk-button.tk-button_narrow.tk-button_colored ACCEPT
+
+    // demo dialog modal
+    div.dialog-demo Click to look  
+        button.tk-button.tk-button_narrow.tk-button_colored DEMO
+            .rippleJS
         .tk-dialog
             span.tk-dialog__title Dialog
             .tk-dialog__description
                 p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
                 p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-                
+                p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
+                p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
             .tk-dialog__footer
                 button.tk-button.tk-button_narrow MORE INFO…
                 button.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
                 button.tk-button.tk-button_narrow.tk-button_colored ACCEPT
-
-    // demo dialog modal
-    button.tk-raised-button(data-onclick="dialog") show dialog
-    .tk-dialog(data-modal="dialog")
-        span.tk-dialog__title Dialog
-        .tk-dialog__description
-            p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-            p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-            p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-            p Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-        .tk-dialog__footer
-            button.tk-button.tk-button_narrow MORE INFO…
-            button.tk-card__button_pulled.tk-button.tk-button_narrow DECLINE
-            button.tk-button.tk-button_narrow.tk-button_colored ACCEPT
