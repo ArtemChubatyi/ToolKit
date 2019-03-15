@@ -1,6 +1,6 @@
 .tk-toast {
     position: fixed;
-    top: 110%; 
+    top: 100%; 
     right: 5%;
     min-width: 290px;
 
@@ -10,7 +10,7 @@
     transition: all .3s ease-in-out;
 
     &__text {
-        position: relative;
+        // position: relative;
         margin: 15px 25px;
 
         color: white;
@@ -19,13 +19,10 @@
         line-height: 1.2;
     }
 
-    &__action-wrapper {
-        position: relative;
+    &__button {
+        // position: relative;
         align-self: center;
         margin-left: -15px;
-    }
-
-    &__button {
         padding: 15px 25px;
     }
 
@@ -34,6 +31,6 @@
     }
 
     &_show {
-        bottom: 10%;
+        top: 90%;
     }
 }

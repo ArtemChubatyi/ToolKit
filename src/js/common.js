@@ -35,8 +35,8 @@
 	});
 
 	// --------modal toast------
-	document.querySelector('.toast-examples > button').onclick = function () {
-		let toast = document.querySelector('.toast-examples > .tk-toast');
+	document.getElementById('demo-toast').onclick = function () {
+		const toast = document.getElementById('demo-toast').nextElementSibling;
 		toast.classList.add('tk-toast_show');
 		setTimeout(function () {
 			toast.classList.remove('tk-toast_show');
@@ -70,7 +70,7 @@
 	// 	}
 	// 	prevScrollPos = curentScrollPos;
 	// }
-	var timer = false;
+	let timer = false;
 	window.onscroll = function() {
 		document.getElementById('header').style.top = "-80px";
 		if (timer) {
